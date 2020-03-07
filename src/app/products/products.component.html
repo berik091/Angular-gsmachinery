@@ -1,4 +1,142 @@
+<section id="product" class="product-area pt-100 pb-130">
+  <div class="container">
+      <div class="row">
+          <!-- Основные категории -->
+          <div class="col-lg-3 col-md-4">
+              <div class="collection-menu text-center mt-30">
+                  <h4 class="collection-tilte">Tosun tarim</h4>
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <a class="active" id="v-pills-furniture-tab" data-toggle="pill" href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture" aria-selected="true">Furniture</a>
+                      
+                      <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Decorative</a>
+                      
+                      <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Lighting</a>
+                      
+                      <a id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="false">Outdoor</a>
+                      
+                      <a id="v-pills-storage-tab" data-toggle="pill" href="#v-pills-storage" role="tab" aria-controls="v-pills-storage" aria-selected="false">Storage</a>
+                  </div> <!-- nav -->
+              </div> <!-- collection menu -->
+          </div>
 
-<h2>
-  Все работает
-</h2>
+
+          <div class="col-lg-9 col-md-8">
+              <div class="tab-content" id="v-pills-tabContent">
+
+<!-- Category 1     -->
+                  <div class="tab-pane fade show active" id="v-pills-furniture" role="tabpanel" aria-labelledby="v-pills-furniture-tab">
+                      <div class="product-items mt-30">
+                          <div class="row product-items-active">
+                      <!-- 1 -->
+                              <div class="col-md-4" *ngFor="let furniture of furnitures">
+                                  <div class="single-product-items">
+                                      <div class="product-item-image">
+                                          <a href="#"><img src="{{furniture.imageUrl}}" alt="Product"></a>
+                                          <div class="product-discount-tag">
+                                              <p>{{furniture.discount}}</p>
+                                          </div>
+                                      </div>
+                                      <div class="product-item-content text-center mt-30">
+                                          <h5 class="product-title"><a href="#">{{furniture.name}}</a></h5>
+                                          <span class="regular-price">{{furniture.price}}</span>
+                                      </div>
+                                  </div> <!-- single product items -->
+                              </div>
+                          </div> <!-- row -->
+                      </div> <!-- product items -->
+                  </div> <!-- tab pane -->
+
+<!-- Category 2     -->
+                  <div class="tab-pane fade" id="v-pills-decorative" role="tabpanel" aria-labelledby="v-pills-decorative-tab">
+                      <div class="product-items mt-30">
+                          <div class="row product-items-active">
+                              <div class="col-md-4" *ngFor="let decorative of decoratives">
+                                <div class="single-product-items">
+                                    <div class="product-item-image">
+                                        <a href="#"><img src="{{decorative.imageUrl}}" alt="Product"></a>
+                                        <div class="product-discount-tag">
+                                            <p>{{decorative.discount}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-content text-center mt-30">
+                                        <h5 class="product-title"><a href="#">{{decorative.name}}</a></h5>
+                                        <span class="regular-price">{{decorative.price}}</span>
+                                    </div>
+                                </div> <!-- single product items -->
+                            </div>
+                          </div> <!-- row -->
+                      </div> <!-- product items -->
+                  </div> <!-- tab pane -->
+
+<!-- Category 3     -->
+                  <div class="tab-pane fade" id="v-pills-lighting" role="tabpanel" aria-labelledby="v-pills-lighting-tab">
+                      <div class="product-items mt-30">
+                          <div class="row product-items-active">
+                            <div class="col-md-4" *ngFor="let lighting of lightings">
+                              <div class="single-product-items">
+                                  <div class="product-item-image">
+                                      <a href="#"><img src="{{lighting.imageUrl}}" alt="Product"></a>
+                                      <div class="product-discount-tag">
+                                          <p>{{lighting.discount}}</p>
+                                      </div>
+                                  </div>
+                                  <div class="product-item-content text-center mt-30">
+                                    <h5 class="product-title"><a href="#">{{lighting.name}}</a></h5>
+                                      <span class="regular-price">{{lighting.price}}</span>
+                                  </div>
+                              </div> <!-- single product items -->
+                          </div>
+                          </div> <!-- row -->
+                      </div> <!-- product items -->
+                  </div> <!-- tab pane -->
+
+<!-- Category 4     -->
+                  <div class="tab-pane fade" id="v-pills-outdoor" role="tabpanel" aria-labelledby="v-pills-outdoor-tab">
+                      <div class="product-items mt-30">
+                          <div class="row product-items-active">
+                                  <div class="col-md-4" *ngFor="let outdoor of outdoors">
+                                    <div class="single-product-items">
+                                        <div class="product-item-image">
+                                            <a href="#"><img src="{{outdoor.imageUrl}}" alt="Product"></a>
+                                            <div class="product-discount-tag">
+                                                <p>{{outdoor.discount}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-content text-center mt-30">
+                                          <h5 class="product-title"><a href="#">{{outdoor.name}}</a></h5>
+                                            <span class="regular-price">{{outdoor.price}}</span>
+                                        </div>
+                                    </div> <!-- single product items -->
+                                </div>
+                          </div> <!-- row -->
+                      </div> <!-- product items -->
+                  </div> <!-- tab pane -->
+
+<!-- Category 5     -->
+                  <div class="tab-pane fade" id="v-pills-storage" role="tabpanel" aria-labelledby="v-pills-storage-tab">
+                      <div class="product-items mt-30">
+                          <div class="row product-items-active">
+                                  <div class="col-md-4" *ngFor="let storage of storages">
+                                    <div class="single-product-items">
+                                        <div class="product-item-image">
+                                            <a href="#"><img src="{{storage.imageUrl}}" alt="Product"></a>
+                                            <div class="product-discount-tag">
+                                                <p>{{storage.discount}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-item-content text-center mt-30">
+                                          <h5 class="product-title"><a href="#">{{storage.name}}</a></h5>
+                                            <span class="regular-price">{{storage.price}}</span>
+                                        </div>
+                                    </div> <!-- single product items -->
+                                </div>
+                          </div> <!-- row -->
+                      </div> <!-- product items -->
+                  </div> <!-- tab pane -->
+
+              </div> <!-- tab content --> 
+          </div>
+
+      </div> <!-- row -->
+  </div> <!-- container -->
+</section>
