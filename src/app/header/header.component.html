@@ -15,25 +15,19 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul id="nav" class="navbar-nav ml-auto">
                               <li class="nav-item active">
-                                  <a data-scroll-nav="0" href="#home">Главная</a>
+                                  <a data-scroll-nav="0" routerLink="/Home" (click)="getActiveTab('home')" [class.active]="activetab === 'home'">Главная</a>
                               </li>
                               <li class="nav-item">
-                                  <a data-scroll-nav="0" href="#product">Продукты</a>
+                                  <a data-scroll-nav="0" routerLink="/Product" (click)="getActiveTab('product')" [class.active]="activetab === 'product'">Продукты</a>
                               </li>
                               <li class="nav-item">
-                                  <a data-scroll-nav="0" href="#service">Услуги</a>
+                                  <a data-scroll-nav="0" routerLink="/Service" (click)="getActiveTab('service')" [class.active]="activetab === 'service'">Услуги</a>
                               </li>
                               <li class="nav-item">
-                                  <a data-scroll-nav="0" href="#showcase">Portfolio</a>
+                                  <a data-scroll-nav="0" routerLink="/Team" (click)="getActiveTab('team')" [class.active]="activetab === 'team'">Team</a>
                               </li>
                               <li class="nav-item">
-                                  <a data-scroll-nav="0" href="#team">Team</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a data-scroll-nav="0" href="#blog">Блог</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a data-scroll-nav="0" href="#contact">Контакты</a>
+                                  <a data-scroll-nav="0" routerLink="/Contact" (click)="getActiveTab('contact')" [class.active]="activetab === 'contact'">Контакты</a>
                               </li>
                           </ul> <!-- navbar nav -->
                       </div>

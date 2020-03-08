@@ -18,10 +18,8 @@
                   </div> <!-- nav -->
               </div> <!-- collection menu -->
           </div>
-
-
           <div class="col-lg-9 col-md-8">
-              <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-content" id="v-pills-tabContent">
 
 <!-- Category 1     -->
                   <div class="tab-pane fade show active" id="v-pills-furniture" role="tabpanel" aria-labelledby="v-pills-furniture-tab">
@@ -32,7 +30,7 @@
                                   <div class="single-product-items">
                                       <div class="product-item-image">
                                           <a href="#"><img src="{{furniture.imageUrl}}" alt="Product"></a>
-                                          <div class="product-discount-tag">
+                                          <div class="product-discount-tag" **ngIf="condition">
                                               <p>{{furniture.discount}}</p>
                                           </div>
                                       </div>
@@ -41,10 +39,11 @@
                                           <span class="regular-price">{{furniture.price}}</span>
                                       </div>
                                   </div> <!-- single product items -->
-                              </div>
+                              </div>                            
                           </div> <!-- row -->
                       </div> <!-- product items -->
                   </div> <!-- tab pane -->
+        
 
 <!-- Category 2     -->
                   <div class="tab-pane fade" id="v-pills-decorative" role="tabpanel" aria-labelledby="v-pills-decorative-tab">
@@ -54,7 +53,8 @@
                                 <div class="single-product-items">
                                     <div class="product-item-image">
                                         <a href="#"><img src="{{decorative.imageUrl}}" alt="Product"></a>
-                                        <div class="product-discount-tag">
+                   <!-- ngif - служать для удаление элемента -->
+                                        <div class="product-discount-tag" **ngIf="ccondition">
                                             <p>{{decorative.discount}}</p>
                                         </div>
                                     </div>
@@ -136,7 +136,6 @@
 
               </div> <!-- tab content --> 
           </div>
-
       </div> <!-- row -->
   </div> <!-- container -->
 </section>

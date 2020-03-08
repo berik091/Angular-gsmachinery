@@ -1,0 +1,22 @@
+.services-area {
+    background-color: #fffaf6; }
+    @media (max-width: 767px) {
+      .services-area {
+        padding-top: 75px;
+        padding-bottom: 80px; } }
+  
+  .services-left {
+    position: relative; }
+    .services-left .services img {
+      width: 100%; }
+  
+  .single-services {
+    border: 1px solid #ddd;
+    padding: 25px 15px;
+    background: #fff; }
+    .single-services .services-icon i {
+      font-size: 50px;
+      color: #fe7865; }
+    .single-services .services-content .title {
+      font-size: 20px;
+      color: #fe7865; }

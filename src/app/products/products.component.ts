@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
+  p: number = 1;
   active = 1;
   @Input() furniture;
   @Input() decorative;
@@ -17,7 +18,7 @@ export class ProductsComponent implements OnInit {
       {
       id:1,
       name: "Classic Wardrobe",
-      imageUrl: 'assets/images/product/p-1.jpg',
+      imageUrl: 'assets/images/product/p-5.jpg',
       discount: '-50%',
       price: '40$'
     },
@@ -56,13 +57,42 @@ export class ProductsComponent implements OnInit {
       discount: '-60%',
       price: '79$'
     },
+    {
+      id:6,
+      name: "Classic Wardrobe",
+      imageUrl: 'assets/images/product/p-1.jpg',
+      discount: '-60%',
+      price: '79$'
+    },
+    {
+      id:6,
+      name: "Classic Wardrobe",
+      imageUrl: 'assets/images/product/p-1.jpg',
+      discount: '-60%',
+      price: '79$'
+    },
+    {
+      id:6,
+      name: "Classic Wardrobe",
+      imageUrl: 'assets/images/product/p-1.jpg',
+      discount: '-60%',
+      price: '79$'
+    },
+    {
+      id:6,
+      name: "Classic Wardrobe",
+      imageUrl: 'assets/images/product/p-1.jpg',
+      discount: '-60%',
+      price: '79$'
+    },
+    
   ];
 
     decoratives:any[]=[
       {
         id:1,
         name: "Classic Wardrobe",
-        imageUrl: 'assets/images/product/p-2.jpg',
+        imageUrl: 'assets/images/product/p-4.jpg',
         discount: '-10%',
         price: '50$'
       },
@@ -100,7 +130,7 @@ export class ProductsComponent implements OnInit {
         imageUrl: 'assets/images/product/p-1.jpg',
         discount: '-60%',
         price: '79$'
-      },
+      }
     ]
 
     lightings:any[]=[
