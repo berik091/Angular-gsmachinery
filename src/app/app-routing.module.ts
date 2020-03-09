@@ -12,7 +12,6 @@ import { DiscountComponent } from './discount/discount.component';
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: 'Home', component: BssliderComponent},
-  { path: 'Home', component: DiscountComponent},
   { path: 'Product', component: ProductsComponent },
   { path: 'Service', component: ServiceComponent },
   { path: 'Team', component: TeamComponent },

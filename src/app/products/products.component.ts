@@ -1,12 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
-
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
+
 export class ProductsComponent implements OnInit {
-  p: number = 1;
+  p = 1;
+  public page: number;
+  public collectionSize: number;
   active = 1;
   @Input() furniture;
   @Input() decorative;
@@ -14,260 +16,253 @@ export class ProductsComponent implements OnInit {
   @Input() outdoor;
   @Input() storage;
 
-    furnitures: any[]= [
+    furnitures: any[] = [
       {
-      id:1,
-      name: "Classic Wardrobe",
+      id: 1,
+      name: 'Classic Wardrobe',
       imageUrl: 'assets/images/product/p-5.jpg',
       discount: '-50%',
       price: '40$'
     },
     {
-      id:2,
-      name: "Touchwood Chaira",
+      id: 2,
+      name: 'Touchwood Chaira',
       imageUrl: 'assets/images/product/p-2.jpg',
       discount: '-55%',
       price: '129$'
     },
     {
-      id:3,
-      name: "Classic Wardrobe",
+      id: 3,
+      name: 'Classic Wardrobe',
       imageUrl: 'assets/images/product/p-3.jpg',
       discount: '-60%',
       price: '49$'
     },
     {
-      id:4,
-      name: "Classic Wardrobe",
+      id: 4,
+      name: 'Classic Wardrobe',
       imageUrl: 'assets/images/product/p-2.jpg',
       discount: '-50%',
       price: '59$'
     },
     {
-      id:5,
-      name: "Touchwood Chaira",
+      id: 5,
+      name: 'Touchwood Chaira',
       imageUrl: 'assets/images/product/p-3.jpg',
       discount: '-55%',
       price: '59$'
     },
     {
-      id:6,
-      name: "Classic Wardrobe",
+      id: 6,
+      name: 'Classic Wardrobe',
       imageUrl: 'assets/images/product/p-1.jpg',
       discount: '-60%',
       price: '79$'
     },
     {
-      id:6,
-      name: "Classic Wardrobe",
+      id: 7,
+      name: 'Classic Wardrobe',
       imageUrl: 'assets/images/product/p-1.jpg',
       discount: '-60%',
       price: '79$'
     },
     {
-      id:6,
-      name: "Classic Wardrobe",
+      id: 8,
+      name: 'Classic Wardrobe',
       imageUrl: 'assets/images/product/p-1.jpg',
       discount: '-60%',
       price: '79$'
     },
     {
-      id:6,
-      name: "Classic Wardrobe",
+      id: 9,
+      name: 'Classic Wardrobe',
       imageUrl: 'assets/images/product/p-1.jpg',
       discount: '-60%',
       price: '79$'
-    },
-    {
-      id:6,
-      name: "Classic Wardrobe",
-      imageUrl: 'assets/images/product/p-1.jpg',
-      discount: '-60%',
-      price: '79$'
-    },
-    
+    }
   ];
 
-    decoratives:any[]=[
+    decoratives: any[] = [
       {
-        id:1,
-        name: "Classic Wardrobe",
+        id: 1,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-4.jpg',
         discount: '-10%',
         price: '50$'
       },
       {
-        id:2,
-        name: "Touchwood Chaira",
+        id: 2,
+        name: 'Touchwood Chaira',
         imageUrl: 'assets/images/product/p-2.jpg',
         discount: '-55%',
         price: '129$'
       },
       {
-        id:3,
-        name: "Classic Wardrobe",
+        id: 3,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-3.jpg',
         discount: '-60%',
         price: '49$'
       },
       {
-        id:4,
-        name: "Classic Wardrobe",
+        id: 4,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-2.jpg',
         discount: '-50%',
         price: '59$'
       },
       {
-        id:5,
-        name: "Touchwood Chaira",
+        id: 5,
+        name: 'Touchwood Chaira',
         imageUrl: 'assets/images/product/p-3.jpg',
         discount: '-55%',
         price: '59$'
       },
       {
-        id:6,
-        name: "Classic Wardrobe",
+        id: 6,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-1.jpg',
         discount: '-60%',
         price: '79$'
       }
-    ]
+    ];
 
-    lightings:any[]=[
+    lightings: any[] = [
       {
-        id:1,
-        name: "Classic Wardrobe",
+        id: 1,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-2.jpg',
         discount: '-100%',
         price: '50$'
       },
       {
-        id:2,
-        name: "Touchwood Chaira",
+        id: 2,
+        name: 'Touchwood Chaira',
         imageUrl: 'assets/images/product/p-2.jpg',
         discount: '-55%',
         price: '129$'
       },
       {
-        id:3,
-        name: "Classic Wardrobe",
+        id: 3,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-3.jpg',
         discount: '-60%',
         price: '49$'
       },
       {
-        id:4,
-        name: "Classic Wardrobe",
+        id: 4,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-2.jpg',
         discount: '-50%',
         price: '59$'
       },
       {
-        id:5,
-        name: "Touchwood Chaira",
+        id: 5,
+        name: 'Touchwood Chaira',
         imageUrl: 'assets/images/product/p-3.jpg',
         discount: '-55%',
         price: '59$'
       },
       {
-        id:6,
-        name: "Classic Wardrobe",
+        id: 6,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-1.jpg',
         discount: '-60%',
         price: '79$'
       },
-    ]
+    ];
 
-    outdoors:any[]=[
+    outdoors: any[] = [
       {
-        id:1,
-        name: "Classic Wardrobe",
+        id: 1,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-1.jpg',
         discount: '-90%',
         price: '50$'
       },
       {
-        id:2,
-        name: "Touchwood Chaira",
+        id: 2,
+        name: 'Touchwood Chaira',
         imageUrl: 'assets/images/product/p-2.jpg',
         discount: '-55%',
         price: '129$'
       },
       {
-        id:3,
-        name: "Classic Wardrobe",
+        id: 3,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-3.jpg',
         discount: '-60%',
         price: '49$'
       },
       {
-        id:4,
-        name: "Classic Wardrobe",
+        id: 4,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-2.jpg',
         discount: '-50%',
         price: '59$'
       },
       {
-        id:5,
-        name: "Touchwood Chaira",
+        id: 5,
+        name: 'Touchwood Chaira',
         imageUrl: 'assets/images/product/p-3.jpg',
         discount: '-55%',
         price: '59$'
       },
       {
-        id:6,
-        name: "Classic Wardrobe",
+        id: 6,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-1.jpg',
         discount: '-60%',
         price: '79$'
       },
-    ]
-    storages:any[]=[
+    ];
+    storages: any[] = [
       {
-        id:1,
-        name: "Classic Wardrobe",
+        id: 1,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-1.jpg',
         discount: '-90%',
         price: '50$'
       },
       {
-        id:2,
-        name: "Touchwood",
+        id: 2,
+        name: 'Touchwood',
         imageUrl: 'assets/images/product/p-2.jpg',
         discount: '-20%',
         price: '19$'
       },
       {
-        id:3,
-        name: "Classic Wardrobe",
+        id: 3,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-3.jpg',
         discount: '-60%',
         price: '49$'
       },
       {
-        id:4,
-        name: "Classic Wardrobe",
+        id: 4,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-2.jpg',
         discount: '-50%',
         price: '59$'
       },
       {
-        id:5,
-        name: "Touchwood Chaira",
+        id: 5,
+        name: 'Touchwood Chaira',
         imageUrl: 'assets/images/product/p-3.jpg',
         discount: '-55%',
         price: '59$'
       },
       {
-        id:6,
-        name: "Classic Wardrobe",
+        id: 6,
+        name: 'Classic Wardrobe',
         imageUrl: 'assets/images/product/p-1.jpg',
         discount: '-60%',
         price: '79$'
       },
-    ]
+    ];
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {}
   }

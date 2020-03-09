@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 // using Derective
-import {NgxPaginationModule} from 'ngx-pagination';
 import { HoverDirective } from './hover.directive';
 import { AppComponent } from './app.component';
 // import { SliderComponent } from './slider/slider.component';
@@ -29,13 +28,12 @@ import { AppRoutingModule } from './app-routing.module';
     ServiceComponent,
     TeamComponent,
     ContactComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     SlickCarouselModule,
     NgbModule,
-    NgxPaginationModule,
     AppRoutingModule
   ],
   providers: [],

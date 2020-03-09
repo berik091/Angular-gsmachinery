@@ -1,3 +1,7 @@
+.container{
+    max-width: 1240px;
+}
+
 @media (max-width: 767px) {
   .product-area {
     padding-top: 50px;
@@ -8,7 +12,7 @@
   font-size: 24px;
   font-weight: 600;
   padding: 30px 20px; }
-  
+
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .collection-menu .collection-tilte {
       font-size: 20px;

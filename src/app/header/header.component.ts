@@ -6,14 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  activetab= 'home';
-
+  activetab = 'home';
   constructor() { }
 
   ngOnInit(): void {
   }
-  getActiveTab(tabname:string){
+  getActiveTab(tabname: string) {
     this.activetab = tabname;
   }
-
 }
