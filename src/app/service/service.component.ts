@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ConfigService} from '../config.service';
 
 @Component({
   selector: 'app-service',
@@ -6,19 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service.component.scss']
 })
 export class ServiceComponent implements OnInit {
+    services:any={}
 
-  services = {
-    heading: 'Our Story',
-    title: 'Build Your Sweet Home',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusm od tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation.',
-    imageUrl: 'assets/images/services/services.jpg',
-    buttonlink: '\home'
-  }
-  constructor() { }
+  constructor (private config: ConfigService) { }
 
   ngOnInit(): void {
+    this.services= this.getServices();
   }
-
+  getServices(){
+    return this.config.getConfig().services;
+  }
 }

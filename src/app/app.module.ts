@@ -15,6 +15,7 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ConfigService } from './config.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { AppRoutingModule } from './app-routing.module';
     NgbModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
