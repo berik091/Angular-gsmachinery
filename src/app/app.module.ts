@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
+// import { SlickCarouselModule } from 'ngx-slick-carousel';
 // using Derective
 import { HoverDirective } from './hover.directive';
 import { AppComponent } from './app.component';
@@ -33,7 +33,7 @@ import { ConfigService } from './config.service';
   ],
   imports: [
     BrowserModule,
-    SlickCarouselModule,
+    // SlickCarouselModule,
     NgbModule,
     AppRoutingModule
   ],

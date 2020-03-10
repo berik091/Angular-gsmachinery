@@ -7,14 +7,14 @@ import {ConfigService} from '../config.service';
   styleUrls: ['./service.component.scss']
 })
 export class ServiceComponent implements OnInit {
-    services:any={}
+    services: any = { };
 
-  constructor (private config: ConfigService) { }
+  constructor(private config: ConfigService) { }
 
   ngOnInit(): void {
-    this.services= this.getServices();
+    this.services = this.getServices();
   }
-  getServices(){
+  getServices() {
     return this.config.getConfig().services;
   }
 }

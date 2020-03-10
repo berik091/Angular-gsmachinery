@@ -18,49 +18,29 @@
                     </div> <!-- services btn -->
                 </div> <!-- services left -->
             </div>
-            <div class="col-lg-6">
 
+            <div class="col-lg-6">
                 <div class="services-right mt-45">
                     <div class="row justify-content-center">
                         <div class="col-md-6 col-sm-8">
-                            <div class="single-services text-center" *ngFor="let service of services.icon">
+                            <div class="single-services text-center" *ngFor="let service of services.leftblock">
                                 <div class="services-icon">
-                                    <i class="lni-grid-alt"></i>
+                                    <i class="fab fa-accusoft"></i>
                                 </div>
                                 <div class="services-content mt-20">
                                 <h5 class="title mb-10">{{service.title}}</h5>
                                     <p>{{service.text}}</p>
                                 </div>
                             </div> <!-- single services -->
-
-                            <div class="single-services text-center mt-30">
-                                <div class="services-icon">
-                                    <i class="lni-ruler-pencil"></i>
-                                </div>
-                                <div class="services-content mt-20">
-                                    <h5 class="title mb-10">Decoration</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
-                                </div>
-                            </div> <!-- single services -->
                         </div>
                         <div class="col-md-6 col-sm-8">
-                            <div class="single-services text-center mt-30">
+                            <div class="single-services text-center mt-30" *ngFor="let service of services.rightblock">
                                 <div class="services-icon">
-                                    <i class="lni-customer"></i>
+                                  <i class="fab fa-accusoft"></i>
                                 </div>
                                 <div class="services-content mt-20">
-                                    <h5 class="title mb-10">Consultancy</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
-                                </div>
-                            </div> <!-- single services -->
-
-                            <div class="single-services text-center mt-30">
-                                <div class="services-icon">
-                                    <i class="lni-support"></i>
-                                </div>
-                                <div class="services-content mt-20">
-                                    <h5 class="title mb-10">Custom Orders</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                                    <h5 class="title mb-10">{{service.title}}</h5>
+                                    <p>{{service.text}}</p>
                                 </div>
                             </div> <!-- single services -->
                         </div>
