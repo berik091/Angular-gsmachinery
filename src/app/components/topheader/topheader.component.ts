@@ -11,7 +11,7 @@ export class TopheaderComponent implements OnInit {
 @Input() social: any;
 
 telephones: any[] = [{href: 'tel:+7 (727) 317 85 49', i: 'fas fa-phone-alt', telephone: '+7 (727) 317 85 50'}];
-emails: any[] = [{href: 'tel:+7 (727) 317 85 49', i: 'fas fa-phone-alt', email: '+7 (727) 317 85 50'}];
+emails: any[] = [{href: 'mailto:info@goldenstar.kz', i: 'fas fa-envelope', email: 'info@goldenstar.kz'}];
   constructor() { }
   ngOnInit(): void {
   }
