@@ -4,18 +4,19 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 // import { SlickCarouselModule } from 'ngx-slick-carousel';
 // using Derective
 import { HoverDirective } from './hover.directive';
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app.component';
 // import { SliderComponent } from './slider/slider.component';
-import { BssliderComponent } from './bsslider/bsslider.component';
-import { HeaderComponent } from './header/header.component';
-import { DiscountComponent } from './discount/discount.component';
-import { ProductsComponent } from './products/products.component';
-import { ServiceComponent } from './service/service.component';
-import { TeamComponent } from './team/team.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
+import { BssliderComponent } from './components/bsslider/bsslider.component';
+import { HeaderComponent } from './components/header/header.component';
+import { DiscountComponent } from './components/discount/discount.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ServiceComponent } from './components/service/service.component';
+import { TeamComponent } from './components/team/team.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ConfigService } from './config.service';
+import { TopheaderComponent } from './components/topheader/topheader.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ConfigService } from './config.service';
     ServiceComponent,
     TeamComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    TopheaderComponent,
   ],
   imports: [
     BrowserModule,

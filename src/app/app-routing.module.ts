@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { BssliderComponent } from './bsslider/bsslider.component';
-import { ProductsComponent } from './products/products.component';
-import { ServiceComponent } from './service/service.component';
-import { TeamComponent } from './team/team.component';
-import { ContactComponent } from './contact/contact.component';
-import { DiscountComponent } from './discount/discount.component';
+import { BssliderComponent } from './components/bsslider/bsslider.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ServiceComponent } from './components/service/service.component';
+import { TeamComponent } from './components/team/team.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { DiscountComponent } from './components/discount/discount.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
