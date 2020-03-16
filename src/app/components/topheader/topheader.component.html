@@ -1,0 +1,17 @@
+<div class="topheader-container">
+  <div class="topheader-block">
+    <div class= "contact-block" *ngFor='let telephone of telephones'>
+      <div class="telephone">
+        <a href="{{telephone.href}}"><i class="{{telephone.i}}"></i>{{telephone.telephone}}</a>
+      </div>
+      <div class="email" *ngFor ="let email of emails">
+        <a href="{{email.href}}"><i class="{{email.i}}"></i>{{email.email}}</a>
+      </div>
+    </div>
+    <div class="social-block">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
