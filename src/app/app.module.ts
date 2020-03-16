@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ConfigService } from './config.service';
+import { NoutfoundcomponentComponent } from './noutfoundcomponent/noutfoundcomponent.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ConfigService } from './config.service';
     ServiceComponent,
     TeamComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    NoutfoundcomponentComponent
   ],
   imports: [
     BrowserModule,

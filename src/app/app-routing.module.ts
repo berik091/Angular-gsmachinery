@@ -7,7 +7,7 @@ import { ProductsComponent } from './products/products.component';
 import { ServiceComponent } from './service/service.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
-import { DiscountComponent } from './discount/discount.component';
+import { NoutfoundcomponentComponent } from './noutfoundcomponent/noutfoundcomponent.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
@@ -16,6 +16,8 @@ const routes: Routes = [
   { path: 'Service', component: ServiceComponent },
   { path: 'Team', component: TeamComponent },
   { path: 'Contact', component: ContactComponent },
+  { path: '404', component: NoutfoundcomponentComponent },
+  { path: '**', redirectTo: '/404' }
 ];
 
 @NgModule({
