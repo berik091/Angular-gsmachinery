@@ -16,11 +16,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ConfigService } from './config.service';
-
 import { NoutfoundcomponentComponent } from './noutfoundcomponent/noutfoundcomponent.component';
-
 import { TopheaderComponent } from './components/topheader/topheader.component';
-
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,9 +38,11 @@ import { TopheaderComponent } from './components/topheader/topheader.component';
   ],
   imports: [
     BrowserModule,
-    // SlickCarouselModule,
+    ReactiveFormsModule,
+    FormsModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // SlickCarouselModule,
   ],
   providers: [ConfigService],
   bootstrap: [AppComponent]
