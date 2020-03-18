@@ -21,17 +21,22 @@ export class ContactComponent implements OnInit {
         Validators.required, Validators.minLength(3)
       ]),
       phone: new FormControl('', [
-        Validators.required, Validators.minLength(5),
-        // Validators.pattern(/^[0-9]+(?!.)/)
-      ])
+        Validators.required,
+        Validators.minLength(5)
+      ]),
+      message: new FormControl('', [
+        Validators.required,
+        Validators.minLength(5)
+      ]),
     });
   }
   submit() {
-
     if (this.form.valid) {
       console.log('Form: ', this.form );
       const formData = {... this.form.value};
       console.log('Form Data', formData);
+  // Очистка формы
+      this.form.reset();
     }
   }
 }

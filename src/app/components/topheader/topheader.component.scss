@@ -1,7 +1,7 @@
 .topheader-container{
   // max-width: 1200px;
-  background-color: #000;
-  padding: 8px 30px;
+  background: linear-gradient(125deg, #778beb, #f8a5c2);
+  padding: 6px 30px;
   font-size: 12px;
 
   .topheader-block{
@@ -36,7 +36,7 @@ a {
   text-decoration: none;
 }
 i.fab{
-  font-size: 20px;
+  font-size: 17px;
 }
 
 @media(min-width:375px){

@@ -19,6 +19,7 @@ import { ConfigService } from './config.service';
 import { NoutfoundcomponentComponent } from './noutfoundcomponent/noutfoundcomponent.component';
 import { TopheaderComponent } from './components/topheader/topheader.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     ContactComponent,
     FooterComponent,
     TopheaderComponent,
-    NoutfoundcomponentComponent
+    NoutfoundcomponentComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

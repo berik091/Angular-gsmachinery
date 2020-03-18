@@ -1,19 +1,18 @@
 .main-container{
+  max-width: 100%;
   margin: auto;
   padding: 0;
   width: 1140px;
-  border: 1px solid #000;
   display: flex;
-
   .contact-container{
     padding: 20px;
-    width: 40%;
-
   }
+
   .form-container{
     width: 60%;
     padding: 20px;
   }
+
   h3{
     text-align: center;
   }
@@ -31,13 +30,28 @@
       color: red;
     }
   }
+  small {
+    color: red;
+  }
+  input {
+    &.ng-invalid.ng-touched{
+      border-left: 5px solid #a94442;
+    }
+    &.ng-valid.ng-touched{
+      border-left: 5px solid #42A948;
+    }
+  }
 }
+@media (max-width:414px){
+  .main-container{
+    margin: auto;
+    padding: 0;
+    width: 1140px;
+    display: inline-block;
 
-input {
-  &.ng-invalid.ng-touched{
-    border: 1px solid red;
+    .form-container{
+      width: 100%;
+      padding: 20px;
   }
-  &.ng-valid.ng-touched{
-    border: 1px solid green;
-  }
+}
 }

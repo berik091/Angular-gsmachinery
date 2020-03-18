@@ -1,7 +1,9 @@
 .container{
-    max-width: 1240px;
+    max-width: 1200px;
 }
-
+.col-md-4{
+  padding: 0 10px;
+}
 @media (max-width: 767px) {
   .product-area {
     padding-top: 50px;
@@ -38,7 +40,12 @@
     background-color: #fe7865;
     border-color: #fe7865;
     color: #fff; }
-
+.single-product-items {
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px #00000060;
+}
 .single-product-items .product-item-image {
   position: relative;
   overflow: hidden; }
@@ -46,7 +53,7 @@
     display: block; }
   .single-product-items .product-item-image img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     -webkit-transition: all 0.4s ease-out 0s;
     -moz-transition: all 0.4s ease-out 0s;
     -ms-transition: all 0.4s ease-out 0s;
@@ -67,8 +74,8 @@
       font-size: 22px;
       line-height: 70px; }
 .single-product-items .product-item-content .product-title a {
-  font-size: 20px;
-  color: #333;
+  font-size: 13px;
+  color: #0089d0;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -86,7 +93,9 @@
   font-weight: 600;
   position: relative; }
 .single-product-items .product-item-content .regular-price {
-  color: #fe7865; }
+  color: #000;
+  font-size: 14px;
+}
 .single-product-items .product-item-content .discount-price {
   color: #c4c4c4; }
   .single-product-items .product-item-content .discount-price::before {
