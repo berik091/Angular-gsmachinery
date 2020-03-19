@@ -10,11 +10,11 @@
 
                       <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Vertical feed mixer</a>
 
-                      <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Lighting</a>
+                      <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Single Auger Horizantal Feed Mixer</a>
 
-                      <a id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="false">Outdoor</a>
+                      <a class="silage" id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="false">Silage Round Baler</a>
 
-                      <a id="v-pills-storage-tab" data-toggle="pill" href="#v-pills-storage" role="tab" aria-controls="v-pills-storage" aria-selected="false">Storage</a>
+                      <a id="v-pills-storage-tab" data-toggle="pill" href="#v-pills-storage" role="tab" aria-controls="v-pills-storage" aria-selected="false">Hale Bopp-300 Rake-Ted Combination</a>
                   </div> <!-- nav -->
               </div> <!-- collection menu -->
           </div>
@@ -26,14 +26,14 @@
                       <div class="product-items">
                           <div class="row product-items-active">
                       <!-- 1 -->
-                              <div class="col-md-4" *ngFor="let furniture of furnitures">
+                              <div class="col-md-4" *ngFor="let horizontal of horizontals">
                                   <div class="single-product-items">
                                       <div class="product-item-image">
-                                          <a href="#"><img src="{{furniture.imageUrl}}" alt="Product"></a>
+                                          <a href="#"><img src="{{horizontal.imageUrl}}" alt="Product"></a>
                                       </div>
                                       <div class="product-item-content text-center mt-30">
-                                          <h5 class="product-title"><a href="#">{{furniture.name | uppercase}}</a></h5>
-                                          <span class="regular-price">{{furniture.price}}</span>
+                                          <h5 class="product-title"><a [routerLink]="[ '/Form']">{{horizontal.name | uppercase}}</a></h5>
+                                          <span class="regular-price">{{horizontal.price}}</span>
                                       </div>
                                   </div> <!-- single product items -->
                               </div>
@@ -46,14 +46,14 @@
                   <div class="tab-pane fade" id="v-pills-decorative" role="tabpanel" aria-labelledby="v-pills-decorative-tab">
                       <div class="product-items mt-30">
                           <div class="row product-items-active">
-                              <div class="col-md-4" *ngFor="let decorative of decoratives">
+                              <div class="col-md-4" *ngFor="let vertical of verticals">
                                 <div class="single-product-items">
                                     <div class="product-item-image">
-                                        <a href="#"><img src="{{decorative.imageUrl}}" alt="Product"></a>
+                                        <a href="#"><img src="{{vertical.imageUrl}}" alt="Product"></a>
                                     </div>
                                     <div class="product-item-content text-center mt-30">
-                                        <h5 class="product-title"><a href="#">{{decorative.name}}</a></h5>
-                                        <span class="regular-price">{{decorative.price}}</span>
+                                        <h5 class="product-title"><a href="#">{{vertical.name}}</a></h5>
+                                        <span class="regular-price">{{vertical.price}}</span>
                                     </div>
                                 </div> <!-- single product items -->
                             </div>
@@ -65,14 +65,14 @@
                   <div class="tab-pane fade" id="v-pills-lighting" role="tabpanel" aria-labelledby="v-pills-lighting-tab">
                       <div class="product-items mt-30">
                           <div class="row product-items-active">
-                            <div class="col-md-4" *ngFor="let lighting of lightings">
+                            <div class="col-md-4" *ngFor="let auger of augers">
                               <div class="single-product-items">
                                   <div class="product-item-image">
-                                      <a href="#"><img src="{{lighting.imageUrl}}" alt="Product"></a>
+                                      <a href="#"><img src="{{auger.imageUrl}}" alt="Product"></a>
                                   </div>
                                   <div class="product-item-content text-center mt-30">
-                                    <h5 class="product-title"><a href="#">{{lighting.name}}</a></h5>
-                                      <span class="regular-price">{{lighting.price}}</span>
+                                    <h5 class="product-title"><a href="#">{{auger.name}}</a></h5>
+                                      <span class="regular-price">{{auger.price}}</span>
                                   </div>
                               </div> <!-- single product items -->
                           </div>
@@ -84,14 +84,14 @@
                   <div class="tab-pane fade" id="v-pills-outdoor" role="tabpanel" aria-labelledby="v-pills-outdoor-tab">
                       <div class="product-items mt-30">
                           <div class="row product-items-active">
-                                  <div class="col-md-4" *ngFor="let outdoor of outdoors">
+                                  <div class="col-md-4" *ngFor="let silage of silages">
                                     <div class="single-product-items">
                                         <div class="product-item-image">
-                                            <a href="#"><img src="{{outdoor.imageUrl}}" alt="Product"></a>
+                                            <a href="#"><img src="{{silage.imageUrl}}" alt="Product"></a>
                                         </div>
                                         <div class="product-item-content text-center mt-30">
-                                          <h5 class="product-title"><a href="#">{{outdoor.name}}</a></h5>
-                                            <span class="regular-price">{{outdoor.price}}</span>
+                                          <h5 class="product-title"><a href="#">{{silage.name}}</a></h5>
+                                            <span class="regular-price">{{silage.price}}</span>
                                         </div>
                                     </div> <!-- single product items -->
                                 </div>
@@ -103,17 +103,14 @@
                   <div class="tab-pane fade" id="v-pills-storage" role="tabpanel" aria-labelledby="v-pills-storage-tab">
                       <div class="product-items">
                           <div class="row product-items-active">
-                                  <div class="col-md-4" *ngFor="let storage of storages">
+                                  <div class="col-md-4" *ngFor="let hale of hales">
                                     <div class="single-product-items">
                                         <div class="product-item-image">
-                                            <a href="#"><img src="{{storage.imageUrl}}" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>{{storage.discount}}</p>
-                                            </div>
+                                            <a href="#"><img src="{{hale.imageUrl}}" alt="Product"></a>
                                         </div>
                                         <div class="product-item-content text-center mt-30">
-                                          <h5 class="product-title"><a href="#">{{storage.name}}</a></h5>
-                                            <span class="regular-price">{{storage.price}}</span>
+                                          <h5 class="product-title"><a href="#">{{hale.name}}</a></h5>
+                                            <span class="regular-price">{{hale.price}}</span>
                                         </div>
                                     </div> <!-- single product items -->
                                 </div>

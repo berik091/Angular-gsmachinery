@@ -6,7 +6,7 @@
 
 .single-discount-product {
   position: relative;
-
+  padding-bottom: 20px;
     .product-image {
         overflow: hidden;
         img{
@@ -29,7 +29,7 @@
             font-weight: 500;
             transition: all 0.4s ease-out 0s;
             text-decoration: none;
-            list-style: none; 
+            list-style: none;
 
             &:hover{
               color: #fe7865;

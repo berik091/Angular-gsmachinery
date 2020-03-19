@@ -38,19 +38,18 @@ a {
 i.fab{
   font-size: 17px;
 }
-
-@media(min-width:375px){
+}
+@media(max-width:375px){
   .topheader-container{
-padding: 0;
+    padding: 10px 5px;
     font-size: 14px;
-
     .telephone,
     .email{
-    padding: 0 20px;
+    padding: 0 10px;
       a>i{
         padding: 0 5px;
       }
     }
   }
 }
-}
+
