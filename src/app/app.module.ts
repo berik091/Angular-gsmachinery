@@ -20,6 +20,7 @@ import { NoutfoundcomponentComponent } from './noutfoundcomponent/noutfoundcompo
 import { TopheaderComponent } from './components/topheader/topheader.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FormComponent } from './components/form/form.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FormComponent } from './components/form/form.component';
     FooterComponent,
     TopheaderComponent,
     NoutfoundcomponentComponent,
-    FormComponent
+    FormComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
