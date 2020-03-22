@@ -10,14 +10,17 @@ import { NoutfoundcomponentComponent } from './noutfoundcomponent/noutfoundcompo
 import { FormComponent } from './components/form/form.component';
 import { DiscountComponent } from './components/discount/discount.component';
 import { ProductComponent } from './components/product/product.component';
+import { ServiceExtraComponent } from './components/service-extra/service-extra.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: 'Home', component: BssliderComponent},
   { path: 'Home', component: DiscountComponent},
   { path: 'Product', component: ProductsComponent },
-  {path: 'Product/:id', component: ProductComponent},
-  { path: 'Service', component: ServiceComponent },
+  { path: 'Product/:id', component: ProductComponent},
+  { path: 'Service', component: ServiceComponent, children: [
+    {path: 'Extra', component: ServiceExtraComponent}
+  ]},
   { path: 'Team', component: TeamComponent },
   { path: 'Contact', component: ContactComponent },
   { path: '404', component: NoutfoundcomponentComponent },

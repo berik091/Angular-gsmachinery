@@ -21,6 +21,7 @@ import { TopheaderComponent } from './components/topheader/topheader.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FormComponent } from './components/form/form.component';
 import { ProductComponent } from './components/product/product.component';
+import { ServiceExtraComponent } from './components/service-extra/service-extra.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ProductComponent } from './components/product/product.component';
     TopheaderComponent,
     NoutfoundcomponentComponent,
     FormComponent,
-    ProductComponent
+    ProductComponent,
+    ServiceExtraComponent
   ],
   imports: [
     BrowserModule,

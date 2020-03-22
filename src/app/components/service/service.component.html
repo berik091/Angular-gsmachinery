@@ -14,7 +14,12 @@
                 <div class="services-left mt-45">
                     <div class="services">
                         <img src="{{services.imageUrl}}">
-                        <a href="{{services.buttonlink}}" class="main-btn mt-30">{{services.buttontext}}<i class="lni-chevron-right"></i></a>
+                        <a [routerLink]="[ '/Service', 'Extra']" class="main-btn mt-30"> Подробsнее
+                           <!-- {{services.buttontext}} -->
+                          
+                        </a>
+                     
+                        
                     </div> <!-- services btn -->
                 </div> <!-- services left -->
             </div>
@@ -49,4 +54,4 @@
         </div>
     </div>
 </section>
-
+<router-outlet></router-outlet>

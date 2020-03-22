@@ -4,7 +4,7 @@ export interface Products {
   id: number;
   name: any;
   imageUrl: any;
-  price: number;
+  price: any;
 }
 
 @Injectable({
@@ -12,17 +12,17 @@ export interface Products {
 })
 export class ProductsService {
 
-  horizontals: any[] = [
-    { id: 1, name: 'HORIZONTAL FEED MIXER 2.5 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor1.jpg', price: 'KZT 990,000.00'},
-    { id: 2, name: 'HORIZONTAL FEED MIXER 4 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor2.jpeg', price: 'KZT 990,000.00'},
-    { id: 3, name: 'HORIZONTAL FEED MIXER 5 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor3.jpg',  price: 'KZT 990,000.00'},
-    { id: 4, name: 'HORIZONTAL FEED MIXER 6 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor4.jpg',  price: 'KZT 990,000.00' },
-    { id: 5, name: 'HORIZONTAL FEED MIXER 8 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor5.jpg',  price: 'KZT 990,000.00'},
-    { id: 6, name: 'HORIZONTAL FEED MIXER 10 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor6.jpeg', price: 'KZT 990,000.00'},
-    { id: 7, name: 'HORIZONTAL FEED MIXER 12 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor7.jpg',  price: 'KZT 990,000.00'},
-    { id: 8, name: 'HORIZONTAL FEED MIXER 14 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor8.jpg',  price: 'KZT 990,000.00' },
-    { id: 9, name: 'HORIZONTAL FEED MIXER 16 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor9.jpg',  price: 'KZT 990,000.00' },
-    { id: 10, name: 'HORIZONTAL FEED MIXER 20 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor10.jpg', price: 'KZT 990,000.00' },
+  horizontals: Products[] = [
+    { name: 'HORIZONTAL FEED MIXER 2.5 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor1.jpg', price: 'KZT 990,000.00', id: 11,},
+    { name: 'HORIZONTAL FEED MIXER 4 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor2.jpeg', price: 'KZT 990,000.00', id:22},
+    { name: 'HORIZONTAL FEED MIXER 5 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor3.jpg',  price: 'KZT 990,000.00', id:33},
+    { name: 'HORIZONTAL FEED MIXER 6 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor4.jpg',  price: 'KZT 990,000.00', id: 44,},
+    { name: 'HORIZONTAL FEED MIXER 8 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor5.jpg',  price: 'KZT 990,000.00', id: 55},
+    { name: 'HORIZONTAL FEED MIXER 10 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor6.jpeg', price: 'KZT 990,000.00', id: 66,},
+    { name: 'HORIZONTAL FEED MIXER 12 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor7.jpg',  price: 'KZT 990,000.00', id: 77,},
+    { name: 'HORIZONTAL FEED MIXER 14 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor8.jpg',  price: 'KZT 990,000.00', id: 88, },
+    { name: 'HORIZONTAL FEED MIXER 16 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor9.jpg',  price: 'KZT 990,000.00', id: 99, },
+    { name: 'HORIZONTAL FEED MIXER 20 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor10.jpg', price: 'KZT 990,000.00', id: 100, },
     ];
 
   verticals: any[] = [
@@ -45,6 +45,9 @@ export class ProductsService {
   hales: any[] = [
     { id: 21, name: 'Classic Hale Bopp-300 Rake-Ted Combination', imageUrl: 'assets/images/product/Hale bob/hale-bopp01.jpg', price: 'KZT 990,000.00'},
   ];
+  getById(id: number){
+    return this.horizontals.find(p=>p.id === id)
+  }
 
   constructor() {
   }

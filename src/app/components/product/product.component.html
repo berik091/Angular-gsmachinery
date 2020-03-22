@@ -1,1 +1,26 @@
-<p>product works!</p>
+<div class="container">
+    <div class="btn-back">
+        <button class="btn" [routerLink]="[ '/Product']">Назад</button>
+    </div>
+
+    <div class="product-container">
+<!-- left container -->
+        <div class="left-container">
+            <div>
+                <a><img src="{{product.imageUrl}}" alt="Product"></a>
+            </div>
+        </div>
+<!-- right container -->
+        <div class="right-container">
+            <div><h1 class="product-name">{{product.name | titlecase}}</h1></div>
+            <div class="product-id"><small style="float: right;">Артикул: {{product.id}}</small></div>
+            
+            <hr>
+            <div><p class="product-price">{{product.price}}</p></div>
+            <div class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Illo esse asperiores soluta dolorum quisquam repellat beatae debitis autem, vitae modi.
+            </div>
+        </div>
+    </div>
+</div>

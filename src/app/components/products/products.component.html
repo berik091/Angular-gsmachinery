@@ -27,15 +27,19 @@
                           <div class="row product-items-active">
                       <!-- 1 -->
                               <div class="col-md-4" *ngFor="let horizontal of horizontals">
-                                  <div class="single-product-items">
-                                      <div class="product-item-image">
-                                          <a><img src="{{horizontal.imageUrl}}" alt="Product"></a>
-                                      </div>
-                                      <div class="product-item-content text-center mt-30">
-                                          <h5 class="product-title"><a [routerLink]="[ '/Form']">{{horizontal.name | uppercase}}</a></h5>
-                                          <span class="regular-price">{{horizontal.price}}</span>
-                                      </div>
-                                  </div> <!-- single product items -->
+                                  <a [routerLink]="[ '/Product', horizontal.id ]">
+                                    <div class="single-product-items">
+                                        <strong *ngIf="false">(ID {{horizontal.id}}) </strong>
+                                        <div class="product-item-image">
+                                            <a><img src="{{horizontal.imageUrl}}" alt="Product"></a>
+                                        </div>
+                                        <div class="product-item-content text-center mt-30">
+                                            <h5 class="product-title"><a [routerLink]="[ '/Form']">{{horizontal.name | uppercase}}</a></h5>
+                                            <span class="regular-price">{{horizontal.price}}</span>
+                                        </div>
+                                    </div> <!-- single product items -->
+                                  </a>
+                             
                               </div>
                           </div> <!-- row -->
                       </div> <!-- product items -->
