@@ -22,6 +22,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FormComponent } from './components/form/form.component';
 import { ProductComponent } from './components/product/product.component';
 import { ServiceExtraComponent } from './components/service-extra/service-extra.component';
+import { ProductSliderComponent } from './components/product-slider/product-slider.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ServiceExtraComponent } from './components/service-extra/service-extra.
     NoutfoundcomponentComponent,
     FormComponent,
     ProductComponent,
-    ServiceExtraComponent
+    ServiceExtraComponent,
+    ProductSliderComponent
   ],
   imports: [
     BrowserModule,

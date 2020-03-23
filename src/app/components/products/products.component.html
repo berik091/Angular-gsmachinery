@@ -51,7 +51,9 @@
                       <div class="product-items mt-30">
                           <div class="row product-items-active">
                               <div class="col-md-4" *ngFor="let vertical of verticals">
+                                <a [routerLink]="[ '/Product', vertical.id ]">
                                 <div class="single-product-items">
+                                    <strong *ngIf="false">(ID {{horizontal.id}}) </strong>
                                     <div class="product-item-image">
                                         <a href="#"><img src="{{vertical.imageUrl}}" alt="Product"></a>
                                     </div>
@@ -60,6 +62,7 @@
                                         <span class="regular-price">{{vertical.price}}</span>
                                     </div>
                                 </div> <!-- single product items -->
+                                </a>>
                             </div>
                           </div> <!-- row -->
                       </div> <!-- product items -->
