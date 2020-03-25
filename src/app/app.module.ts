@@ -6,23 +6,22 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HoverDirective } from './hover.directive';
 import { AppComponent } from './components/app.component';
 // import { SliderComponent } from './slider/slider.component';
-import { BssliderComponent } from './components/bsslider/bsslider.component';
-import { HeaderComponent } from './components/header/header.component';
-import { DiscountComponent } from './components/discount/discount.component';
-import { ProductsComponent } from './components/products/products.component';
-import { ServiceComponent } from './components/service/service.component';
-import { TeamComponent } from './components/team/team.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { BssliderComponent } from 'src/app/components/main page/bsslider/bsslider.component';
+import { HeaderComponent } from 'src/app/components/shared/navbar/header/header.component';
+import { DiscountComponent } from 'src/app/components/main page/discount/discount.component';
+import { ProductsComponent } from 'src/app/components/product page/product list/products.component';
+import { ServiceComponent } from 'src/app/components/service page/service.component';
+import { TeamComponent } from 'src/app/components/about page/team.component';
+import { ContactComponent } from 'src/app/components/contact page/contact.component';
+import { FooterComponent } from 'src/app/components/shared/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ConfigService } from './config.service';
-import { NoutfoundcomponentComponent } from './noutfoundcomponent/noutfoundcomponent.component';
-import { TopheaderComponent } from './components/topheader/topheader.component';
+import { ConfigService } from './services/config.service';
+import { NoutfoundcomponentComponent } from 'src/app/components/404/noutfoundcomponent.component';
+import { TopheaderComponent } from 'src/app/components/shared/navbar/topheader/topheader.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { FormComponent } from './components/form/form.component';
-import { ProductComponent } from './components/product/product.component';
-import { ServiceExtraComponent } from './components/service-extra/service-extra.component';
-import { ProductSliderComponent } from './components/product-slider/product-slider.component';
+import { ProductComponent } from 'src/app/components/product page/product item/product.component';
+import { ServiceExtraComponent } from 'src/app/components/service page/service-extra/service-extra.component';
+import { ProductSliderComponent } from './components/product page/product-slider/product-slider.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +38,6 @@ import { ProductSliderComponent } from './components/product-slider/product-slid
     FooterComponent,
     TopheaderComponent,
     NoutfoundcomponentComponent,
-    FormComponent,
     ProductComponent,
     ServiceExtraComponent,
     ProductSliderComponent

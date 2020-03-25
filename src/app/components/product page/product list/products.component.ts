@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ProductsService } from 'src/app/products.service';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-products',
@@ -8,7 +8,7 @@ import { ProductsService } from 'src/app/products.service';
 })
 
 export class ProductsComponent implements OnInit {
-  p = 1;
+  // p = 1;
   public page: number;
   public collectionSize: number;
   active = 1;

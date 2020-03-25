@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
-export interface Products {
+// создаем объект Product и этот обект имеет свойство id, name, imageUrl, price
+export interface Product {
   id: number;
   name: string;
   imageUrl: any;
@@ -10,8 +12,10 @@ export interface Products {
 @Injectable({
   providedIn: 'root'
 })
+
 export class ProductsService {
-   horizontals: Products[]=[
+// создаем класс объекта horizontals c применением свойств
+   horizontals: Product[]=[
     {name: 'HORIZONTAL FEED MIXER 2.5 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor1.jpg', price: 'KZT 990,000.00', id: 11 }, 
     {name: 'HORIZONTAL FEED MIXER 4 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor2.jpeg', price: 'KZT 990,000.00', id:22},
     { name: 'HORIZONTAL FEED MIXER 5 M3',imageUrl: 'assets/images/product/horizontalfeedmixer/hor3.jpg', price: 'KZT 990,000.00', id:33},
@@ -23,7 +27,7 @@ export class ProductsService {
     { name: 'HORIZONTAL FEED MIXER 16 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor9.jpg',  price: 'KZT 990,000.00', id: 99, },
     { name: 'HORIZONTAL FEED MIXER 20 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor10.jpg', price: 'KZT 990,000.00', id: 100, },
     ];
-  verticals: Products[] = [
+  verticals: Product[] = [
     { id: 110, name: 'VERTICAL FEED MIXER 1.5 M3', imageUrl: 'assets/images/product/verticalfeedmixer/ver1.jpg', price: 'KZT 990,000.00'},
     { id: 120, name: 'VERTICAL FEED MIXER 3 M3', imageUrl: 'assets/images/product/verticalfeedmixer/ver2.jpg',  price: 'KZT 990,000.00'},
     { id: 130, name: 'VERTICAL FEED MIXER 5 M3', imageUrl: 'assets/images/product/verticalfeedmixer/ver3.jpg', price: 'KZT 990,000.00'},
@@ -43,10 +47,10 @@ export class ProductsService {
   hales: any[] = [
     { id: 21, name: 'Classic Hale Bopp-300 Rake-Ted Combination', imageUrl: 'assets/images/product/Hale bob/hale-bopp01.jpg', price: 'KZT 990,000.00'},
   ];
+  
   getById(id: number){
     return this.horizontals.find(p=>p.id === id)
   }
-
   constructor() {
   }
 }
