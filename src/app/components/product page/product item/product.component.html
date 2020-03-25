@@ -6,14 +6,25 @@
     <div class="product-container">
 <!-- left container -->
         <div class="left-container">
-            <div *ngFor="let productSlide of product.extraImages">
+            <div class="imgBox" ><img src="{{product.imageUrl}}" alt=""></div>
+            <ul class="thumb">
+                <li *ngFor="let productSlide of product.extraImages">
+                    <a href="{{productSlide}}" target="imgBox">
+                         <img src="{{productSlide}}" alt=""width="112px">
+                    </a>
+                </li>
+            </ul>
+
+
+            <!-- <div *ngFor="let productSlide of product.extraImages">
                 <a><img src="{{productSlide}}" alt="Product"></a>
             </div>
-            <div>
+            <div> -->
+
                 <!-- <a><img src="{{product.imageUrl}}" alt="Product"></a> -->
 
             </div>
-        </div>
+    
 <!-- right container -->
         <div class="right-container">
             <div><h1 class="product-name">{{product.name | titlecase}}</h1></div>
@@ -26,4 +37,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>>

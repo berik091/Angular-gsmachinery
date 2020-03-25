@@ -19,7 +19,9 @@ export class ProductsService {
 // создаем класс объекта horizontals c применением свойств
    horizontals: Product[]=[
     {name: 'HORIZONTAL FEED MIXER 2.5 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor1.jpg', price: 'KZT 990,000.00', id: 11, description:'Hello Biko', 
-        extraImages: ['assets/images/product/horizontalfeedmixer/hor5.jpg', 'assets/images/product/horizontalfeedmixer/hor4.jpg', 'assets/images/product/horizontalfeedmixer/hor7.jpg']}, 
+        extraImages: ['assets/images/product/horizontalfeedmixer/hor5.jpg', 'assets/images/product/horizontalfeedmixer/hor4.jpg', 'assets/images/product/horizontalfeedmixer/hor7.jpg',
+                      'assets/images/product/horizontalfeedmixer/hor7.jpg','assets/images/product/horizontalfeedmixer/hor8.jpg'
+                     ]}, 
 
     {name: 'HORIZONTAL FEED MIXER 4 M3', imageUrl: 'assets/images/product/horizontalfeedmixer/hor2.jpeg', price: 'KZT 990,000.00', id:22, description: 'Hello Siko!'},
     { name: 'HORIZONTAL FEED MIXER 5 M3',imageUrl: 'assets/images/product/horizontalfeedmixer/hor3.jpg', price: 'KZT 990,000.00', id:33},
