@@ -6,10 +6,13 @@
     <div class="product-container">
 <!-- left container -->
         <div class="left-container">
-            <app-product-slider></app-product-slider>
-            <!-- <div>
-                <a><img src="{{product.imageUrl}}" alt="Product"></a>
-            </div> -->
+            <div *ngFor="let productSlide of product.extraImages">
+                <a><img src="{{productSlide}}" alt="Product"></a>
+            </div>
+            <div>
+                <!-- <a><img src="{{product.imageUrl}}" alt="Product"></a> -->
+
+            </div>
         </div>
 <!-- right container -->
         <div class="right-container">
@@ -19,8 +22,7 @@
             <hr>
             <div><p class="product-price">{{product.price}}</p></div>
             <div class="content">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Illo esse asperiores soluta dolorum quisquam repellat beatae debitis autem, vitae modi.
+               {{product.description}}
             </div>
         </div>
     </div>
