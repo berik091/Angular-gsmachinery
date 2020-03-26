@@ -8,8 +8,8 @@ declare var $: any;
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-  @Input() verticals: Product;
-  product: Product;
+  @Input() product: Product;
+  
 
   constructor(private route: ActivatedRoute,
               private productsService: ProductsService

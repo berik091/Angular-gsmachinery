@@ -18,6 +18,7 @@ export interface Product {
 })
 
 export class ProductsService {
+  
 // создаем класс объекта horizontals c применением свойств
    horizontals: Product[] = [
     { name: 'HORIZONTAL FEED MIXER 2.5',
@@ -98,7 +99,7 @@ export class ProductsService {
   ];
 
     verticals: Product[] = [
-    { name: 'VERTICAL FEED MIXER 1.5 M3',
+    { name: 'VERTICAL FEED MIXER 1.55 M3',
       imageUrl: 'assets/images/product/verticalfeedmixer/1_5m/1.jpg', price: 'KZT 100,000.00',  id: 110,
       extraImages: ['assets/images/product/horizontalfeedmixer/20m/2.jpg',
                   'assets/images/product/horizontalfeedmixer/20m/3.jpg',
@@ -121,46 +122,56 @@ export class ProductsService {
                     'assets/images/product/verticalfeedmixer/8/4.jpg',
                     'assets/images/product/verticalfeedmixer/8m/3.jpg']},
     { name: 'VERTICAL FEED MIXER 12.0 M3',
-      imageUrl: 'assets/images/product/verticalfeedmixer/12m/1.jpg', price: 'KZT 990,000.00',  id: 140,
+      imageUrl: 'assets/images/product/verticalfeedmixer/12m/1.jpg', price: 'KZT 990,000.00',  id: 150,
       extraImages: ['assets/images/product/verticalfeedmixer/12m/2.jpg',
                     'assets/images/product/verticalfeedmixer/12m/3.jpg',
                     'assets/images/product/verticalfeedmixer/12/4.jpg']},
       { name: 'VERTICAL FEED MIXER 20.0 M3',
-        imageUrl: 'assets/images/product/verticalfeedmixer/20m/1.jpg', price: 'KZT 990,000.00',  id: 140,
+        imageUrl: 'assets/images/product/verticalfeedmixer/20m/1.jpg', price: 'KZT 990,000.00',  id: 160,
         extraImages: ['assets/images/product/verticalfeedmixer/20m/2.jpg',
                       'assets/images/product/verticalfeedmixer/20m/3.jpg',
                       'assets/images/product/verticalfeedmixer/20/4.jpg',
                       'assets/images/product/verticalfeedmixer/20m/5.jpg']},
     ];
-  // verticals: Product[] = [
-  //   { name: 'VERTICAL FEED MIXER 1.5 M3',
-  //     imageUrl: 'assets/images/product/horizontalfeedmixer/20m/2.jpg', price: 'KZT 990,000.00',  id: 110,
-  //     extraImages: ['assets/images/product/horizontalfeedmixer/20m/2.jpg',
-  //                   'assets/images/product/horizontalfeedmixer/20m/3.jpg',
-  //                   'assets/images/product/horizontalfeedmixer/20m/4.jpg']},
-
-  //   { id: 120, name: 'VERTICAL FEED MIXER 3 M3', imageUrl: 'assets/images/product/verticalfeedmixer/ver2.jpg',  price: 'KZT 990,000.00'},
-  //   { id: 130, name: 'VERTICAL FEED MIXER 5 M3', imageUrl: 'assets/images/product/verticalfeedmixer/ver3.jpg', price: 'KZT 990,000.00'},
-  //   { id: 140, name: 'VERTICAL FEED MIXER 8 M3', imageUrl: 'assets/images/product/verticalfeedmixer/ver4.jpg', price: 'KZT 990,000.00' },
-  //   { id: 150, name: 'VERTICAL FEED MIXER 12 M3', imageUrl: 'assets/images/product/verticalfeedmixer/ver5.jpg', price: 'KZT 990,000.00'},
-  //   { id: 160, name: 'VERTICAL FEED MIXER 20 M3', imageUrl: 'assets/images/product/verticalfeedmixer/ver6.jpg', price: 'KZT 990,000.00'}
-  // ];
 
   augers: any[] = [
-    { id: 17, name: 'SINGLE AUGER HORIZANTAL FEED MIXER 4 M3', imageUrl: 'assets/images/product/Single Auger Horizantal Feed Mixer/single-hor01.jpg', price: 'KZT 990,000.00'},
-    { id: 18, name: 'SINGLE AUGER HORIZANTAL FEED MIXER 6 M3', imageUrl: 'assets/images/product/Single Auger Horizantal Feed Mixer/single-hor02.jpg', price: 'KZT 990,000.00'},
+     { name: 'SINGLE AUGER HORIZANTAL FEED MIXER 4 M3', 
+       imageUrl: 'assets/images/product/Single Auger Horizantal Feed Mixer/single-hor01.jpg', price: ' 990,000.00', id: 170,
+       extraImages: ['assets/images/product/verticalfeedmixer/20m/2.jpg',
+                    'assets/images/product/verticalfeedmixer/20m/3.jpg',
+                    'assets/images/product/verticalfeedmixer/20/4.jpg',
+                    'assets/images/product/verticalfeedmixer/20m/5.jpg']},
+
+    { name: 'SINGLE AUGER HORIZANTAL FEED MIXER 6 M3', 
+      imageUrl: 'assets/images/product/Single Auger Horizantal Feed Mixer/single-hor02.jpg', price: 'KZT 990,000.00', id: 180,
+      extraImages: ['assets/images/product/verticalfeedmixer/20m/2.jpg',
+                    'assets/images/product/verticalfeedmixer/20m/3.jpg',
+                    'assets/images/product/verticalfeedmixer/20/4.jpg',
+                    'assets/images/product/verticalfeedmixer/20m/5.jpg']},
   ];
   silages: any[] = [
-    { id: 19, name: 'MOBILE SILAGE ROUND BALER', imageUrl: 'assets/images/product/silage round baler/silage01.jpg', price: 'KZT 990,000.00'},
+    {name: 'MOBILE SILAGE ROUND BALER', 
+    imageUrl: 'assets/images/product/silage round baler/silage01.jpg', price: 'KZT 990,000.00', id: 19, 
+    extraImages: ['assets/images/product/verticalfeedmixer/20m/2.jpg',
+                    'assets/images/product/verticalfeedmixer/20m/3.jpg',
+                    'assets/images/product/verticalfeedmixer/20/4.jpg',
+                    'assets/images/product/verticalfeedmixer/20m/5.jpg']},
     { id: 20, name: 'COMBINE SILAGE ROUND BALER', imageUrl: 'assets/images/product/silage round baler/silage02.jpg', price: 'KZT 990,000.00'}
   ];
   hales: any[] = [
-    { id: 21, name: 'Classic Hale Bopp-300 Rake-Ted Combination', imageUrl: 'assets/images/product/Hale bob/hale-bopp01.jpg', price: 'KZT 990,000.00'},
+    {name: 'Classic Hale Bopp-300 Rake-Ted Combination', 
+    imageUrl: 'assets/images/product/Hale bob/hale-bopp01.jpg', price: 'KZT 990,000.00', id: 21, 
+    extraImages: ['assets/images/product/verticalfeedmixer/20m/2.jpg',
+                  'assets/images/product/verticalfeedmixer/20m/3.jpg',
+                  'assets/images/product/verticalfeedmixer/20/4.jpg',
+                  'assets/images/product/verticalfeedmixer/20m/5.jpg']}
   ];
 
   getById(id: number){
-    return this.horizontals.find(p=>p.id === id)
+    return this.verticals.find(p=>p.id === id) || 
+    this.horizontals.find (p =>p.id === id) || 
+    this.augers.find (p =>p.id === id) || this.silages.find (p =>p.id === id) || this.hales.find (p =>p.id === id) 
   }
   constructor() {
-  }
+  } 
 }

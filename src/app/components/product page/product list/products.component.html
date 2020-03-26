@@ -72,6 +72,7 @@
                       <div class="product-items mt-30">
                           <div class="row product-items-active">
                             <div class="col-md-4" *ngFor="let auger of augers">
+                                <a [routerLink]="[ '/Product', auger.id ]">
                               <div class="single-product-items">
                                   <div class="product-item-image">
                                       <a href="#"><img src="{{auger.imageUrl}}" alt="Product"></a>
@@ -81,6 +82,7 @@
                                       <span class="regular-price">{{auger.price}}</span>
                                   </div>
                               </div> <!-- single product items -->
+                              </a>
                           </div>
                           </div> <!-- row -->
                       </div> <!-- product items -->
@@ -91,6 +93,7 @@
                       <div class="product-items mt-30">
                           <div class="row product-items-active">
                                   <div class="col-md-4" *ngFor="let silage of silages">
+                                    <a [routerLink]="[ '/Product', silage.id ]">
                                     <div class="single-product-items">
                                         <div class="product-item-image">
                                             <a href="#"><img src="{{silage.imageUrl}}" alt="Product"></a>
@@ -100,6 +103,7 @@
                                             <span class="regular-price">{{silage.price}}</span>
                                         </div>
                                     </div> <!-- single product items -->
+                                    </a>
                                 </div>
                           </div> <!-- row -->
                       </div> <!-- product items -->
@@ -110,6 +114,7 @@
                       <div class="product-items">
                           <div class="row product-items-active">
                                   <div class="col-md-4" *ngFor="let hale of hales">
+                                    <a [routerLink]="[ '/Product', hale.id ]">
                                     <div class="single-product-items">
                                         <div class="product-item-image">
                                             <a href="#"><img src="{{hale.imageUrl}}" alt="Product"></a>
@@ -119,6 +124,7 @@
                                             <span class="regular-price">{{hale.price}}</span>
                                         </div>
                                     </div> <!-- single product items -->
+                                    </a>
                                 </div>
                           </div> <!-- row -->
                       </div> <!-- product items -->
