@@ -1,137 +1,138 @@
-<section id="product" class="product-area pt-100 pb-130">
-  <div class="container">
-      <div class="row">
-          <!-- Основные категории -->
-          <div class="col-lg-3 col-md-4">
-              <div class="collection-menu text-center mt-30">
-                  <h4 class="collection-tilte">Tosun tarim</h4>
-                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                      <a class="active" id="v-pills-furniture-tab" data-toggle="pill" href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture" aria-selected="true">Horizontal feed mixer</a>
-
-                      <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Vertical feed mixer</a>
-
-                      <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Single Auger Horizantal Feed Mixer</a>
-
-                      <a class="silage" id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="false">Silage Round Baler</a>
-
-                      <a id="v-pills-storage-tab" data-toggle="pill" href="#v-pills-storage" role="tab" aria-controls="v-pills-storage" aria-selected="false">Hale Bopp-300 Rake-Ted Combination</a>
-                  </div> <!-- nav -->
-              </div> <!-- collection menu -->
-          </div>
-          <div class="col-lg-9 col-md-8">
-            <div class="tab-content" id="v-pills-tabContent">
-
-<!-- Category 1     -->
-                  <div class="tab-pane fade show active" id="v-pills-furniture" role="tabpanel" aria-labelledby="v-pills-furniture-tab">
-                      <div class="product-items">
-                          <div class="row product-items-active">
-                      <!-- 1 -->
-                              <div class="col-md-4" *ngFor="let horizontal of horizontals">
-                                  <a [routerLink]="[ '/Product', horizontal.id ]">
-                                    <div class="single-product-items">
-                                        <strong *ngIf="false">(ID {{horizontal.id}}) </strong>
-                                        <div class="product-item-image">
-                                            <a><img src="{{horizontal.imageUrl}}" alt="Product"></a>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a [routerLink]="[ '/Form']">{{horizontal.name | uppercase}} м<sup>3</sup></a></h5>
-                                            <span class="regular-price">{{horizontal.price}} &#8376;</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                  </a>
-                              </div>
-                          </div> <!-- row -->
-                      </div> <!-- product items -->
-                      <ngb-pagination class="d-flex justify-content-center" [collectionSize]="40" [(page)]="page" [boundaryLinks]="false"></ngb-pagination>
-                  </div> <!-- tab pane -->
-
-<!-- Category 2     -->
-                  <div class="tab-pane fade" id="v-pills-decorative" role="tabpanel" aria-labelledby="v-pills-decorative-tab">
-                      <div class="product-items mt-30">
-                          <div class="row product-items-active">
-                              <div class="col-md-4" *ngFor="let vertical of verticals">
-                                <a [routerLink]="[ '/Product', vertical.id ]">
-                                <div class="single-product-items">
-                                    <strong *ngIf="false">(ID {{vertical.id}}) </strong>
-                                    <div class="product-item-image">
-                                        <a href="#"><img src="{{vertical.imageUrl}}" alt="Product"></a>
+    <section id="product" class="product-area pt-100 pb-130">
+        <div class="container">
+            <div class="row">
+                <!-- Основные категории -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="collection-menu text-center mt-30">
+                        <h4 class="collection-tilte">Tosun tarim</h4>
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="active" id="v-pills-furniture-tab" data-toggle="pill" href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture" aria-selected="true">Horizontal feed mixer</a>
+      
+                            <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Vertical feed mixer</a>
+      
+                            <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Single Auger Horizantal Feed Mixer</a>
+      
+                            <a class="silage" id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="false">Silage Round Baler</a>
+      
+                            <a id="v-pills-storage-tab" data-toggle="pill" href="#v-pills-storage" role="tab" aria-controls="v-pills-storage" aria-selected="false">Hale Bopp-300 Rake-Ted Combination</a>
+                        </div> <!-- nav -->
+                    </div> <!-- collection menu -->
+                </div>
+                <div class="col-lg-9 col-md-8">
+                  <div class="tab-content" id="v-pills-tabContent">
+      
+      <!-- Category 1     -->
+                        <div class="tab-pane fade show active" id="v-pills-furniture" role="tabpanel" aria-labelledby="v-pills-furniture-tab">
+                            <div class="product-items">
+                                <div class="row product-items-active">
+                            <!-- 1 -->
+                                    <div class="col-md-4" *ngFor="let horizontal of horizontals">
+                                        <a [routerLink]="[ '/Product', horizontal.id ]">
+                                          <div class="single-product-items">
+                                              <strong *ngIf="false">(ID {{horizontal.id}}) </strong>
+                                              <div class="product-item-image">
+                                                  <a><img src="{{horizontal.imageUrl}}" alt="Product"></a>
+                                              </div>
+                                              <div class="product-item-content text-center mt-30">
+                                                  <h5 class="product-title"><a [routerLink]="[ '/Form']">{{horizontal.name | uppercase}} м<sup>3</sup></a></h5>
+                                                  <span class="regular-price">{{horizontal.price}} &#8376;</span>
+                                              </div>
+                                          </div> <!-- single product items -->
+                                        </a>
                                     </div>
-                                    <div class="product-item-content text-center mt-30">
-                                        <h5 class="product-title"><a [routerLink]="[ '/Product', vertical.id ]">{{vertical.name}}</a></h5>
-                                        <span class="regular-price">{{vertical.price}}</span>
-                                    </div>
+                                </div> <!-- row -->
+                            </div> <!-- product items -->
+                            <ngb-pagination class="d-flex justify-content-center" [collectionSize]="40" [(page)]="page" [boundaryLinks]="false"></ngb-pagination>
+                        </div> <!-- tab pane -->
+      
+      <!-- Category 2     -->
+                        <div class="tab-pane fade" id="v-pills-decorative" role="tabpanel" aria-labelledby="v-pills-decorative-tab">
+                            <div class="product-items mt-30">
+                                <div class="row product-items-active">
+                                    <div class="col-md-4" *ngFor="let vertical of verticals">
+                                      <a [routerLink]="[ '/Product', vertical.id ]">
+                                      <div class="single-product-items">
+                                          <strong *ngIf="false">(ID {{vertical.id}}) </strong>
+                                          <div class="product-item-image">
+                                              <a href="#"><img src="{{vertical.imageUrl}}" alt="Product"></a>
+                                          </div>
+                                          <div class="product-item-content text-center mt-30">
+                                              <h5 class="product-title"><a [routerLink]="[ '/Product', vertical.id ]">{{vertical.name}}</a></h5>
+                                              <span class="regular-price">{{vertical.price}}</span>
+                                          </div>
+                                      </div>
+                                      </a>
+                                  </div>
                                 </div>
-                                </a>
                             </div>
-                          </div>
-                      </div>
-                  </div>
-
-<!-- Category 3     -->
-                  <div class="tab-pane fade" id="v-pills-lighting" role="tabpanel" aria-labelledby="v-pills-lighting-tab">
-                      <div class="product-items mt-30">
-                          <div class="row product-items-active">
-                            <div class="col-md-4" *ngFor="let auger of augers">
-                                <a [routerLink]="[ '/Product', auger.id ]">
-                              <div class="single-product-items">
-                                  <div class="product-item-image">
-                                      <a href="#"><img src="{{auger.imageUrl}}" alt="Product"></a>
-                                  </div>
-                                  <div class="product-item-content text-center mt-30">
-                                    <h5 class="product-title"><a href="#">{{auger.name}}</a></h5>
-                                      <span class="regular-price">{{auger.price}}</span>
-                                  </div>
-                              </div> <!-- single product items -->
-                              </a>
-                          </div>
-                          </div> <!-- row -->
-                      </div> <!-- product items -->
-                  </div> <!-- tab pane -->
-
-<!-- Category 4     -->
-                  <div class="tab-pane fade" id="v-pills-outdoor" role="tabpanel" aria-labelledby="v-pills-outdoor-tab">
-                      <div class="product-items mt-30">
-                          <div class="row product-items-active">
-                                  <div class="col-md-4" *ngFor="let silage of silages">
-                                    <a [routerLink]="[ '/Product', silage.id ]">
+                        </div>
+      
+      <!-- Category 3     -->
+                        <div class="tab-pane fade" id="v-pills-lighting" role="tabpanel" aria-labelledby="v-pills-lighting-tab">
+                            <div class="product-items mt-30">
+                                <div class="row product-items-active">
+                                  <div class="col-md-4" *ngFor="let auger of augers">
+                                      <a [routerLink]="[ '/Product', auger.id ]">
                                     <div class="single-product-items">
                                         <div class="product-item-image">
-                                            <a href="#"><img src="{{silage.imageUrl}}" alt="Product"></a>
+                                            <a href="#"><img src="{{auger.imageUrl}}" alt="Product"></a>
                                         </div>
                                         <div class="product-item-content text-center mt-30">
-                                          <h5 class="product-title"><a href="#">{{silage.name}}</a></h5>
-                                            <span class="regular-price">{{silage.price}}</span>
+                                          <h5 class="product-title"><a href="#">{{auger.name}}</a></h5>
+                                            <span class="regular-price">{{auger.price}}</span>
                                         </div>
                                     </div> <!-- single product items -->
                                     </a>
                                 </div>
-                          </div> <!-- row -->
-                      </div> <!-- product items -->
-                  </div> <!-- tab pane -->
-
-<!-- Category 5     -->
-                  <div class="tab-pane fade" id="v-pills-storage" role="tabpanel" aria-labelledby="v-pills-storage-tab">
-                      <div class="product-items">
-                          <div class="row product-items-active">
-                                  <div class="col-md-4" *ngFor="let hale of hales">
-                                    <a [routerLink]="[ '/Product', hale.id ]">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="{{hale.imageUrl}}" alt="Product"></a>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                          <h5 class="product-title"><a href="#">{{hale.name}}</a></h5>
-                                            <span class="regular-price">{{hale.price}}</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                    </a>
-                                </div>
-                          </div> <!-- row -->
-                      </div> <!-- product items -->
-                  </div> <!-- tab pane -->
-
-              </div> <!-- tab content -->
-          </div>
-      </div> <!-- row -->
-  </div> <!-- container -->
-</section>
+                                </div> <!-- row -->
+                            </div> <!-- product items -->
+                        </div> <!-- tab pane -->
+      
+      <!-- Category 4     -->
+                        <div class="tab-pane fade" id="v-pills-outdoor" role="tabpanel" aria-labelledby="v-pills-outdoor-tab">
+                            <div class="product-items mt-30">
+                                <div class="row product-items-active">
+                                        <div class="col-md-4" *ngFor="let silage of silages">
+                                          <a [routerLink]="[ '/Product', silage.id ]">
+                                          <div class="single-product-items">
+                                              <div class="product-item-image">
+                                                  <a href="#"><img src="{{silage.imageUrl}}" alt="Product"></a>
+                                              </div>
+                                              <div class="product-item-content text-center mt-30">
+                                                <h5 class="product-title"><a href="#">{{silage.name}}</a></h5>
+                                                  <span class="regular-price">{{silage.price}}</span>
+                                              </div>
+                                          </div> <!-- single product items -->
+                                          </a>
+                                      </div>
+                                </div> <!-- row -->
+                            </div> <!-- product items -->
+                        </div> <!-- tab pane -->
+      
+      <!-- Category 5     -->
+                        <div class="tab-pane fade" id="v-pills-storage" role="tabpanel" aria-labelledby="v-pills-storage-tab">
+                            <div class="product-items">
+                                <div class="row product-items-active">
+                                        <div class="col-md-4" *ngFor="let hale of hales">
+                                          <a [routerLink]="[ '/Product', hale.id ]">
+                                          <div class="single-product-items">
+                                              <div class="product-item-image">
+                                                  <a href="#"><img src="{{hale.imageUrl}}" alt="Product"></a>
+                                              </div>
+                                              <div class="product-item-content text-center mt-30">
+                                                <h5 class="product-title"><a href="#">{{hale.name}}</a></h5>
+                                                  <span class="regular-price">{{hale.price}}</span>
+                                              </div>
+                                          </div> <!-- single product items -->
+                                          </a>
+                                      </div>
+                                </div> <!-- row -->
+                            </div> <!-- product items -->
+                        </div> <!-- tab pane -->
+      
+                    </div> <!-- tab content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+      </section>      
+      
