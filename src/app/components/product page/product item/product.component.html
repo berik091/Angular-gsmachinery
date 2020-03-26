@@ -1,6 +1,6 @@
 <div class="container">
     <div class="btn-back">
-        <button class="btn" [routerLink]="[ '/Product']">Назад</button>
+      <button class="btn" [routerLink]="[ '/Product']"><i class="fas fa-angle-left"></i> Назад</button>
     </div>
 
     <div class="product-container">
@@ -14,7 +14,16 @@
                     </a>
                 </li>
             </ul>
-
+          </div>
+            <!-- <div class="left-container">
+              <div class="imgBox" ><img src="{{product.imageUrl}}" alt=""></div>
+              <ul class="thumb">
+                  <li *ngFor="let productSlide of product.extraImages">
+                      <a href="{{productSlide}}" target="imgBox">
+                           <img src="{{productSlide}}" alt=""width="112px">
+                      </a>
+                  </li>
+              </ul> -->
 
             <!-- <div *ngFor="let productSlide of product.extraImages">
                 <a><img src="{{productSlide}}" alt="Product"></a>
@@ -23,18 +32,51 @@
 
                 <!-- <a><img src="{{product.imageUrl}}" alt="Product"></a> -->
 
-            </div>
-    
+
+
 <!-- right container -->
         <div class="right-container">
-            <div><h1 class="product-name">{{product.name | titlecase}}</h1></div>
+            <div><h1 class="product-name">{{product.name | titlecase}} м<sup>3</sup></h1></div>
             <div class="product-id"><small style="float: right;">Артикул: {{product.id}}</small></div>
-            
+
             <hr>
-            <div><p class="product-price">{{product.price}}</p></div>
-            <div class="content">
-               {{product.description}}
+            <div><p class="product-price">{{product.price}} &#8376;</p></div>
+               <div class="description">
+                 <strong>Описание</strong>
+                  <p class="text-dark">Кормосмесители являются очень важной частью животноводческих ферм, производя однородные корма для животных.
+                    Миксер для кормораздатчика позволяет быстро разрезать тюки с помощью специально легированных ножей, однородно
+                    смешивая грубые корма и концентрированные корма благодаря своей конструкции корпуса. Корпус питателя-смесителя
+                    также разработан для уменьшения количества пищи, оставшейся после доставки.
+                  </p>
+               </div>
+               <div>
+                <table class="table table-inverse">
+                  <thead >
+                    <tr class="table-active">
+                      <th>Характеристики</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Вместимость</td>
+                      <td>{{product.capacity}} м<sup>3</sup></td>
+                    </tr>
+                    <tr>
+                      <td>Габариты (ШхВхД)</td>
+                      <td>{{product.size}}</td>
+                    </tr>
+                    <tr>
+                      <td>Мощность</td>
+                      <td>{{product.power}} л.с.</td>
+                    </tr>
+                    <tr>
+                      <td>Производитель</td>
+                      <td>Турция</td>
+                    </tr>
+                  </tbody>
+                </table>
+               </div>
             </div>
         </div>
     </div>
-</div>>

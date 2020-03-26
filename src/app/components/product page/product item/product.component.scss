@@ -15,7 +15,7 @@
 
     .left-container{
     width: 55%;
-    
+
     .imgBox{
         width: 600px;
         margin: 0 0 40px 0;
@@ -30,7 +30,7 @@
         padding: 0;
         display: flex;
         align-items: center;
-        justify-content: start;
+        float: left;
     }
     ul.thumb li {
         list-style: none;
@@ -69,7 +69,17 @@
             font-size: 14px;
         }
     }
-
     }
-
+}
+.product-price{
+  padding-bottom: 20px;
+}
+.description{
+  strong{
+    font-size: 18px;
+    color: #000;
+  }
+  p {
+    text-indent: 20px;
+   }
 }
