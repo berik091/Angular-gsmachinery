@@ -21,6 +21,8 @@ import { ConfigService } from './services/config.service';
 import { HoverDirective } from './hover.directive';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { ProductListComponent } from './components/product page/hms/product-list/product-list.component';
+import { ProductItemComponent } from './components/product page/hms/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     NoutfoundcomponentComponent,
     ProductComponent,
     ServiceExtraComponent,
-    ProductSliderComponent
+    ProductSliderComponent,
+    ProductListComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,

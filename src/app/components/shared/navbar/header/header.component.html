@@ -17,9 +17,21 @@
                               <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
                                   <a data-scroll-nav="0" routerLink="/Home">Главная</a>
                               </li>
-                              <li routerLinkActive="active" class="nav-item">
-                                  <a data-scroll-nav="0" routerLink="/Product">Продукты</a>
+                              <li class="nav-item dropdown" >
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown"
+                                  role="button" data-toggle="dropdown" aria-haspopup="true"
+                                  aria-expanded="false" style="padding: 0;">Продукты</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li routerLinkActive="active">
+                                      <a class="dropdown-item" routerLink="/Product">Tosun Tarim</a>
+                                  </li>
+                                  <li><a class="dropdown-item" routerLink="/Hms">Hms products</a></li>
+                                </div>
                               </li>
+
+                              <!-- <li routerLinkActive="active" class="nav-item">
+                                  <a data-scroll-nav="0" routerLink="/Product">Продукты</a>
+                              </li> -->
                               <li routerLinkActive="active"  class="nav-item">
                                   <a data-scroll-nav="0" routerLink="/Service">Услуги</a>
                               </li>
@@ -29,6 +41,7 @@
                               <li routerLinkActive="active" class="nav-item">
                                   <a data-scroll-nav="0" routerLink="/Contact" >Контакты</a>
                               </li>
+
                           </ul> <!-- navbar nav -->
                       </div>
                   </nav> <!-- navbar -->

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ProductsService, Product } from 'src/app/services/products.service';
-import { faCoffee } from  '@fortawesome/fontawesome-free';
+
 declare var $: any;
 @Component({
   selector: 'app-product',
@@ -11,8 +11,6 @@ declare var $: any;
 
 export class ProductComponent implements OnInit {
   @Input() product: Product;
-  faCoffee = faCoffee 
-  
 
   constructor(private route: ActivatedRoute,
               private productsService: ProductsService

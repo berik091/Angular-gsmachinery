@@ -17,7 +17,7 @@ export class ProductsComponent implements OnInit {
   verticals = {};
   augers = {};
   silages = {};
-  hales = {};
+  others = {};
 
   constructor(private productsService: ProductsService) {
    }
@@ -27,7 +27,7 @@ export class ProductsComponent implements OnInit {
     this.verticals = this.getVerticals();
     this.augers = this.getAugers();
     this.silages = this.getSilages();
-    this.hales = this.getHales();
+    this.others = this.getOthers();
     }
 
   getHorizontals() {
@@ -42,7 +42,7 @@ export class ProductsComponent implements OnInit {
   getSilages() {
     return this.productsService.silages;
   }
-  getHales() {
-    return this.productsService.hales;
+  getOthers() {
+    return this.productsService.others;
   }
   }

@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="btn-back">
+    <button class="btn" [routerLink]="[ '/Hms']"><img src="assets/icons/chevron-left-solid.svg" width="10px" class="mr-2"><small><b>Back</b></small></button>
+  </div>
+
+  <div class="product-container">
+<!-- left container -->
+      <div class="left-container">
+          <div class="imgBox" ><img src="{{item.imageUrl}}" alt=""></div>
+          <ul class="thumb">
+              <li *ngFor="let productSlide of item.extraImages">
+                  <a href="{{productSlide}}" target="imgBox">
+                       <img src="{{productSlide}}" alt=""width="112px">
+                  </a>
+              </li>
+          </ul>
+        </div>
+
+<!-- right container -->
+      <div class="right-container">
+          <div><h1 class="product-name">{{item.name | titlecase}} м<sup>3</sup></h1></div>
+          <div class="product-id"><small style="float: right;">Артикул: {{item.id}}</small></div>
+
+          <hr>
+          <div><p class="product-price">{{item.price}} &#8376;</p></div>
+             <div class="description">
+               <strong>Описание</strong>
+                <p class="text-dark">{{item.description}}</p>
+             </div>
+             <div>
+              <table class="table table-inverse">
+                <thead >
+                  <tr class="table-active">
+                    <th>Характеристики</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Вместимость</td>
+                    <td>{{item.capacity}} м<sup>3</sup></td>
+                  </tr>
+                  <tr>
+                    <td>Габариты (ШхВхД)</td>
+                    <td>{{item.size}}</td>
+                  </tr>
+                  <tr>
+                    <td>Мощность</td>
+                    <td>{{item.power}} л.с.</td>
+                  </tr>
+                  <tr>
+                    <td>Производитель</td>
+                    <td>Турция</td>
+                  </tr>
+                </tbody>
+              </table>
+             </div>
+          </div>
+      </div>
+  </div>

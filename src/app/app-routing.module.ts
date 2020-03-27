@@ -10,6 +10,8 @@ import { NoutfoundcomponentComponent } from 'src/app/components/404/noutfoundcom
 import { DiscountComponent } from 'src/app/components/main page/discount/discount.component';
 import { ProductComponent } from './components/product page/product item/product.component';
 import { ServiceExtraComponent } from 'src/app/components/service page/service-extra/service-extra.component';
+import { ProductListComponent } from './components/product page/hms/product-list/product-list.component';
+import { ProductItemComponent } from './components/product page/hms/product-item/product-item.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'Home', component: DiscountComponent},
   { path: 'Product', component: ProductsComponent },
   { path: 'Product/:id', component: ProductComponent},
+  { path: 'Hms', component: ProductListComponent},
+  { path: 'Hms/:id', component: ProductItemComponent},
   { path: 'Service', component: ServiceComponent, children: [
     {path: 'Extra', component: ServiceExtraComponent}
   ]},

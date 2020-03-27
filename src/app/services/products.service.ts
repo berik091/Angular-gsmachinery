@@ -11,6 +11,7 @@ export interface Product {
   capacity?: number;
   size?: any;
   power?: number;
+  description?: string;
 }
 
 @Injectable({
@@ -18,12 +19,12 @@ export interface Product {
 })
 
 export class ProductsService {
-  
 // создаем класс объекта horizontals c применением свойств
    horizontals: Product[] = [
     { name: 'HORIZONTAL FEED MIXER 2.5',
       imageUrl: 'assets/images/product/horizontalfeedmixer/2_5m/1.jpg', price: '990,000.00', id: 11,
       capacity: 2.5, size: '1.49м х 1.72м х 3.55м', power: 40,
+      description: 'Кормосмесители являются очень важной частью животноводческих ферм, производя однородные корма для животных. Миксер для кормораздатчика позволяет быстро разрезать тюки с помощью специально легированных ножей, однородно смешивая грубые корма и концентрированные корма благодаря своей конструкции корпуса. Корпус питателя-смесителя также разработан для уменьшения количества пищи, оставшейся после доставки.',
       extraImages: ['assets/images/product/horizontalfeedmixer/2_5m/2.jpg',
                 'assets/images/product/horizontalfeedmixer/2_5m/3.jpg',
                 'assets/images/product/horizontalfeedmixer/2_5m/4.jpg'],
@@ -135,43 +136,102 @@ export class ProductsService {
     ];
 
   augers: any[] = [
-     { name: 'SINGLE AUGER HORIZANTAL FEED MIXER 4 M3', 
-       imageUrl: 'assets/images/product/Single Auger Horizantal Feed Mixer/single-hor01.jpg', price: ' 990,000.00', id: 170,
-       extraImages: ['assets/images/product/verticalfeedmixer/20m/2.jpg',
-                    'assets/images/product/verticalfeedmixer/20m/3.jpg',
-                    'assets/images/product/verticalfeedmixer/20/4.jpg',
-                    'assets/images/product/verticalfeedmixer/20m/5.jpg']},
+     { name: 'SINGLE AUGER HORIZANTAL FEED MIXER 4 M3',
+       imageUrl: 'assets/images/product/Single Auger Horizantal Feed Mixer/4m/1.jpg', price: ' 990,000.00', id: 170,
+       extraImages: ['assets/images/product/Single Auger Horizantal Feed Mixer/4m/2.jpg',
+                    'assets/images/product/Single Auger Horizantal Feed Mixer/4m/3.jpg',
+                    'assets/images/product/Single Auger Horizantal Feed Mixer/4m/4.jpg',
+                    'assets/images/product/Single Auger Horizantal Feed Mixer/4m/5.jpg']},
 
-    { name: 'SINGLE AUGER HORIZANTAL FEED MIXER 6 M3', 
-      imageUrl: 'assets/images/product/Single Auger Horizantal Feed Mixer/single-hor02.jpg', price: 'KZT 990,000.00', id: 180,
-      extraImages: ['assets/images/product/verticalfeedmixer/20m/2.jpg',
-                    'assets/images/product/verticalfeedmixer/20m/3.jpg',
-                    'assets/images/product/verticalfeedmixer/20/4.jpg',
-                    'assets/images/product/verticalfeedmixer/20m/5.jpg']},
+    { name: 'SINGLE AUGER HORIZANTAL FEED MIXER 6 M3',
+      imageUrl: 'assets/images/product/Single Auger Horizantal Feed Mixer/6m/1.jpeg', price: 'KZT 990,000.00', id: 180,
+      extraImages: ['assets/images/product/Single Auger Horizantal Feed Mixer/6m/2.jpeg',
+                    'assets/images/product/Single Auger Horizantal Feed Mixer/6m/3.jpeg',
+                    'assets/images/product/Single Auger Horizantal Feed Mixer/6m/4.jpeg']},
   ];
   silages: any[] = [
-    {name: 'MOBILE SILAGE ROUND BALER', 
-    imageUrl: 'assets/images/product/silage round baler/silage01.jpg', price: 'KZT 990,000.00', id: 19, 
-    extraImages: ['assets/images/product/verticalfeedmixer/20m/2.jpg',
-                    'assets/images/product/verticalfeedmixer/20m/3.jpg',
-                    'assets/images/product/verticalfeedmixer/20/4.jpg',
-                    'assets/images/product/verticalfeedmixer/20m/5.jpg']},
-    { id: 20, name: 'COMBINE SILAGE ROUND BALER', imageUrl: 'assets/images/product/silage round baler/silage02.jpg', price: 'KZT 990,000.00'}
+    {name: 'MOBILE SILAGE ROUND BALER',
+    imageUrl: 'assets/images/product/silage round baler/6m/1.jpg', price: '990,000.00', id: 19,
+    extraImages: ['assets/images/product/silage round baler/6m/2.jpg',
+                    'assets/images/product/silage round baler/6m/3.jpg',
+                    'assets/images/product/silage round baler/6m/4.jpg',
+                    'assets/images/product/silage round baler/6m/5.jpg']},
+    {name: 'MOBILE SILAGE ROUND BALER 3000',
+    imageUrl: 'assets/images/product/silage round baler/8m/1.jpg', price: '990,000.00', id: 200,
+    extraImages: ['assets/images/product/silage round baler/8m/2.jpg',
+                    'assets/images/product/silage round baler/8m/3.jpg',
+                    'assets/images/product/silage round baler/8m/4.jpg',
+                    'assets/images/product/silage round baler/8m/5.jpg']}
   ];
-  hales: any[] = [
-    {name: 'Classic Hale Bopp-300 Rake-Ted Combination', 
-    imageUrl: 'assets/images/product/Hale bob/hale-bopp01.jpg', price: 'KZT 990,000.00', id: 21, 
-    extraImages: ['assets/images/product/verticalfeedmixer/20m/2.jpg',
-                  'assets/images/product/verticalfeedmixer/20m/3.jpg',
-                  'assets/images/product/verticalfeedmixer/20/4.jpg',
-                  'assets/images/product/verticalfeedmixer/20m/5.jpg']}
+  others: any[] = [
+    {name: 'Classic Hale Bopp-300 Rake-Ted Combination',
+    imageUrl: 'assets/images/product/Other Products/Hale bob/hale-bopp01.jpg', price: '990,000.00', id: 21,
+    extraImages: ['assets/images/product/Other Products/Hale bob/hale-bopp02.jpg',
+                  'assets/images/product/Other Products/Hale bob/hale-bopp03.jpg',
+                  'assets/images/product/Other Products/Hale bob/hale-bopp04.jpg',
+                  'assets/images/product/Other Products/Hale bob/hale-bopp05.jpg']},
+    {name: 'Stationary Angled Feed Mixers',
+    imageUrl: 'assets/images/product/Other Products/Stationary Angled Feed Mixers/1.jpg', price: '990,000.00', id: 210,
+    extraImages: ['assets/images/product/Other Products/Stationary Angled Feed Mixers/2.jpg',
+                  'assets/images/product/Other Products/Stationary Angled Feed Mixers/3.jpg',
+                  'assets/images/product/Other Products/Stationary Angled Feed Mixers/4.jpg']},
+    {name: 'Maize Chopper',
+    imageUrl: 'assets/images/product/Other Products/maize-chopper/1.jpg', price: '990,000.00', id: 220,
+    extraImages: ['assets/images/product/Other Products/maize-chopper/2.jpg',
+                  'assets/images/product/Other Products/maize-chopper/3.jpg',
+                  'assets/images/product/Other Products/maize-chopper/4.jpg',
+                  'assets/images/product/Other Products/maize-chopper/5.jpg']},
+    {name: 'Forage Harvester',
+    imageUrl: 'assets/images/product/Other Products/forage-harvester/1.jpg', price: '990,000.00', id: 230,
+    extraImages: ['assets/images/product/Other Products/forage-harvester/2.jpg',
+                  'assets/images/product/Other Products/forage-harvester/3.jpg',
+                  'assets/images/product/Other Products/forage-harvester/4.jpg',
+                  'assets/images/product/Other Products/forage-harvester/5.jpg']},
+    {name: 'Liquid Manure Spreader',
+    imageUrl: 'assets/images/product/Other Products/liquid-manure/1.jpg', price: '990,000.00', id: 235,
+    extraImages: ['assets/images/product/Other Products/liquid-manure/2.jpg',
+                  'assets/images/product/Other Products/liquid-manure/3.jpg',
+                  'assets/images/product/Other Products/liquid-manure/4.jpg',
+                  'assets/images/product/Other Products/liquid-manure/5.jpg']},
+    {name: 'Manure Pump',
+    imageUrl: 'assets/images/product/Other Products/manure-pump/1.jpeg', price: '990,000.00', id: 240,
+    extraImages: ['assets/images/product/Other Products/manure-pump/2.jpeg',
+                  'assets/images/product/Other Products/manure-pump/3.jpeg',
+                  'assets/images/product/Other Products/manure-pump/4.jpeg',
+                  'assets/images/product/Other Products/manure-pump/5.jpeg']},
+    {name: 'Manure Scraper Systemp',
+    imageUrl: 'assets/images/product/Other Products/manure-scraper-system/1.jpg', price: '990,000.00', id: 250,
+    extraImages: ['assets/images/product/Other Products/manure-scraper-system/2.jpg']},
+    {name: 'Rotary Rake With 9 Arms',
+    imageUrl: 'assets/images/product/Other Products/rotary-rake-with/1.jpg', price: '990,000.00', id: 260,
+    extraImages: ['assets/images/product/Other Products/rotary-rake-with/2.jpg',
+                  'assets/images/product/Other Products/rotary-rake-with/3.jpg',
+                  'assets/images/product/Other Products/rotary-rake-with/4.jpg',
+                  'assets/images/product/Other Products/rotary-rake-with/5.jpg']},
+    {name: '2 Row-Row Independent Maize Chopper',
+    imageUrl: 'assets/images/product/Other Products/row-independent-maize/1.jpg', price: '990,000.00', id: 270,
+    extraImages: ['assets/images/product/Other Products/row-independent-maize/2.jpg',
+                  'assets/images/product/Other Products/row-independent-maize/3.jpg',
+                  'assets/images/product/Other Products/row-independent-maize/4.jpg']},
+    {name: 'Garden-Greenhouse Self Loading Manure Spreader',
+    imageUrl: 'assets/images/product/Other Products/greenhouse-self/1.jpeg', price: '990,000.00', id: 280,
+    extraImages: ['assets/images/product/Other Products/greenhouse-self/2.jpeg',
+                  'assets/images/product/Other Products/greenhouse-self/3.jpeg',
+                  'assets/images/product/Other Products/greenhouse-self/4.jpeg',
+                  'assets/images/product/Other Products/greenhouse-self/5.jpeg']},
+    {name: 'Automatic Stationary Bale Wrapper',
+    imageUrl: 'assets/images/product/Other Products/automatic-stationary-bale/1.jpeg', price: '990,000.00', id: 290,
+    extraImages: ['assets/images/product/Other Products/automatic-stationary-bale/2.jpeg',
+                  'assets/images/product/Other Products/automatic-stationary-bale/3.jpeg',
+                  'assets/images/product/Other Products/automatic-stationary-bale/4.jpeg',
+                  'assets/images/product/Other Products/automatic-stationary-bale/5.jpeg']},
   ];
 
-  getById(id: number){
-    return this.verticals.find(p=>p.id === id) || 
-    this.horizontals.find (p =>p.id === id) || 
-    this.augers.find (p =>p.id === id) || this.silages.find (p =>p.id === id) || this.hales.find (p =>p.id === id) 
+  getById(id: number) {
+    return this.verticals.find(p => p.id === id) ||
+    this.horizontals.find (p => p.id === id) ||
+    this.augers.find (p => p.id === id) || this.silages.find (p => p.id === id) || this.others.find (p => p.id === id)
   }
   constructor() {
-  } 
+  }
 }

@@ -15,24 +15,6 @@
                 </li>
             </ul>
           </div>
-            <!-- <div class="left-container">
-              <div class="imgBox" ><img src="{{product.imageUrl}}" alt=""></div>
-              <ul class="thumb">
-                  <li *ngFor="let productSlide of product.extraImages">
-                      <a href="{{productSlide}}" target="imgBox">
-                           <img src="{{productSlide}}" alt=""width="112px">
-                      </a>
-                  </li>
-              </ul> -->
-
-            <!-- <div *ngFor="let productSlide of product.extraImages">
-                <a><img src="{{productSlide}}" alt="Product"></a>
-            </div>
-            <div> -->
-
-                <!-- <a><img src="{{product.imageUrl}}" alt="Product"></a> -->
-
-
 
 <!-- right container -->
         <div class="right-container">
@@ -43,11 +25,7 @@
             <div><p class="product-price">{{product.price}} &#8376;</p></div>
                <div class="description">
                  <strong>Описание</strong>
-                  <p class="text-dark">Кормосмесители являются очень важной частью животноводческих ферм, производя однородные корма для животных.
-                    Миксер для кормораздатчика позволяет быстро разрезать тюки с помощью специально легированных ножей, однородно
-                    смешивая грубые корма и концентрированные корма благодаря своей конструкции корпуса. Корпус питателя-смесителя
-                    также разработан для уменьшения количества пищи, оставшейся после доставки.
-                  </p>
+                  <p class="text-dark">{{product.description}}</p>
                </div>
                <div>
                 <table class="table table-inverse">
