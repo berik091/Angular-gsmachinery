@@ -6,9 +6,9 @@
               <div class="collection-menu text-center mt-30">
                   <h4 class="collection-tilte">HMS products</h4>
                   <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                      <a class="active" id="v-pills-furniture-tab" data-toggle="pill" href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture" aria-selected="true">Horizontal feed mixer</a>
+                      <a class="active" id="v-pills-furniture-tab" data-toggle="pill" href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture" aria-selected="true">Horizontal mixer S series</a>
 
-                      <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Vertical feed mixer</a>
+                      <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Vertical mixer A series</a>
 
                       <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Single Auger Horizantal Feed Mixer</a>
 
@@ -34,7 +34,7 @@
                                             <a><img src="{{horizontal.imageUrl}}" alt="Product"></a>
                                         </div>
                                         <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a [routerLink]="[ '/Form']">{{horizontal.name | uppercase}} м<sup>3</sup></a></h5>
+                                            <h5 class="product-title"><a [routerLink]="[ '/Hms', horizontal.id ]">{{horizontal.name | uppercase}}</a></h5>
                                             <span class="regular-price">{{horizontal.price}} &#8376;</span>
                                         </div>
                                     </div> <!-- single product items -->
@@ -50,14 +50,14 @@
                       <div class="product-items mt-30">
                           <div class="row product-items-active">
                               <div class="col-md-4" *ngFor="let vertical of verticals">
-                                <a [routerLink]="[ '/Product', vertical.id ]">
+                                <a [routerLink]="[ '/Hms', vertical.id ]">
                                 <div class="single-product-items">
                                     <strong *ngIf="false">(ID {{vertical.id}}) </strong>
                                     <div class="product-item-image">
                                         <a href="#"><img src="{{vertical.imageUrl}}" alt="Product"></a>
                                     </div>
                                     <div class="product-item-content text-center mt-30">
-                                        <h5 class="product-title"><a [routerLink]="[ '/Product', vertical.id ]">{{vertical.name}}</a></h5>
+                                        <h5 class="product-title"><a [routerLink]="[ '/Hms', vertical.id ]">{{vertical.name}}</a></h5>
                                         <span class="regular-price">{{vertical.price}}</span>
                                     </div>
                                 </div>
