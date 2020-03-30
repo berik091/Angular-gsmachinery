@@ -23,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ProductListComponent } from './components/product page/hms/product-list/product-list.component';
 import { ProductItemComponent } from './components/product page/hms/product-item/product-item.component';
+import { AccordionComponent } from './components/accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ProductItemComponent } from './components/product page/hms/product-item
     ServiceExtraComponent,
     ProductSliderComponent,
     ProductListComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
