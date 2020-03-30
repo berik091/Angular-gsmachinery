@@ -10,12 +10,12 @@ export class DiscountComponent implements OnInit {
 
 discounts: any[] = [
   {
-    name: 'name10',
+    name: 'Tosun Tarim',
     text: 'Подробнее',
     imageUrl: 'assets/images/discount-product/product-1.jpg'
   },
   {
-    name: 'name20',
+    name: 'HMS',
     text: 'Подробнее',
     imageUrl: 'assets/images/discount-product/product-2.jpg'
   },

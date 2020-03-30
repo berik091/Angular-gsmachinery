@@ -1,20 +1,21 @@
 <section id="product" class="product-area pt-100 pb-130">
   <div class="container">
+    <h4 style="padding: 20px 0;"> Сельскохозяйственная техника</h4>
       <div class="row">
           <!-- Основные категории -->
           <div class="col-lg-3 col-md-4">
               <div class="collection-menu text-center mt-30">
-                  <h4 class="collection-tilte">HMS products</h4>
+                  <h5 class="collection-tilte"><img src="assets/images/product/Product HMS/logo-hms.png" style="width:80px"><strong>продукции</strong></h5>
                   <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                      <a class="active" id="v-pills-furniture-tab" data-toggle="pill" href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture" aria-selected="true">Horizontal mixer S series</a>
+                      <a class="active" id="v-pills-furniture-tab" data-toggle="pill" href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture" aria-selected="true">Горизонтальный разбрасыватель удобрений</a>
 
-                      <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Vertical mixer A series</a>
+                      <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Вертикальный разбрасыватель удобрений</a>
 
-                      <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Single Auger Horizantal Feed Mixer</a>
+                      <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Универсальный тип сеялки передач зерна машины</a>
 
-                      <a class="silage" id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="false">Silage Round Baler</a>
+                      <a class="silage" id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="false">Пневматический тип сеялки передач зерна машины</a>
 
-                      <a id="v-pills-storage-tab" data-toggle="pill" href="#v-other-products" role="tab" aria-controls="v-pills-storage" aria-selected="false">Other products</a>
+                      <a id="v-pills-storage-tab" data-toggle="pill" href="#v-other-products" role="tab" aria-controls="v-pills-storage" aria-selected="false">Кран Gunny lift</a>
                   </div> <!-- nav -->
               </div> <!-- collection menu -->
           </div>
@@ -58,7 +59,7 @@
                                     </div>
                                     <div class="product-item-content text-center mt-30">
                                         <h5 class="product-title"><a [routerLink]="[ '/Hms', vertical.id ]">{{vertical.name}}</a></h5>
-                                        <span class="regular-price">{{vertical.price}}</span>
+                                        <span class="regular-price">{{vertical.price}} &#8376;</span>
                                     </div>
                                 </div>
                                 </a>
@@ -72,14 +73,14 @@
                       <div class="product-items mt-30">
                           <div class="row product-items-active">
                             <div class="col-md-4" *ngFor="let auger of augers">
-                                <a [routerLink]="[ '/Product', auger.id ]">
+                                <a [routerLink]="['/Hms', auger.id ]">
                               <div class="single-product-items">
                                   <div class="product-item-image">
                                       <a href="#"><img src="{{auger.imageUrl}}" alt="Product"></a>
                                   </div>
                                   <div class="product-item-content text-center mt-30">
-                                    <h5 class="product-title"><a href="#">{{auger.name}}</a></h5>
-                                      <span class="regular-price">{{auger.price}}</span>
+                                    <h5 class="product-title"><a [routerLink]="['/Hms', auger.id ]">{{auger.name}}</a></h5>
+                                      <span class="regular-price">{{auger.price}} &#8376;</span>
                                   </div>
                               </div> <!-- single product items -->
                               </a>
@@ -93,14 +94,14 @@
                       <div class="product-items mt-30">
                           <div class="row product-items-active">
                                   <div class="col-md-4" *ngFor="let silage of silages">
-                                    <a [routerLink]="[ '/Product', silage.id ]">
+                                    <a [routerLink]="[ '/Hms', silage.id ]">
                                     <div class="single-product-items">
                                         <div class="product-item-image">
                                             <a href="#"><img src="{{silage.imageUrl}}" alt="Product"></a>
                                         </div>
                                         <div class="product-item-content text-center mt-30">
-                                          <h5 class="product-title"><a href="#">{{silage.name}}</a></h5>
-                                            <span class="regular-price">{{silage.price}}</span>
+                                          <h5 class="product-title"><a [routerLink]="['/Hms', silage.id ]">{{silage.name}}</a></h5>
+                                            <span class="regular-price">{{silage.price}} &#8376;</span>
                                         </div>
                                     </div> <!-- single product items -->
                                     </a>
@@ -114,14 +115,14 @@
                       <div class="product-items">
                           <div class="row product-items-active">
                                   <div class="col-md-4" *ngFor="let other of others">
-                                    <a [routerLink]="[ '/Product', other.id ]">
+                                    <a [routerLink]="['/Hms', other.id ]">
                                     <div class="single-product-items">
                                         <div class="product-item-image">
                                             <a href="#"><img src="{{other.imageUrl}}" alt="Product"></a>
                                         </div>
                                         <div class="product-item-content text-center mt-30">
-                                          <h5 class="product-title"><a href="#">{{other.name}}</a></h5>
-                                            <span class="regular-price">{{other.price}}</span>
+                                          <h5 class="product-title"><a [routerLink]="['/Hms', other.id ]">{{other.name}}</a></h5>
+                                            <span class="regular-price">{{other.price}} &#8376;</span>
                                         </div>
                                     </div> <!-- single product items -->
                                     </a>

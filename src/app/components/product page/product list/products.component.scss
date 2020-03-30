@@ -11,9 +11,10 @@
 
 .collection-menu .collection-tilte {
   background-color: #e5e5e5;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 20px 10px; }
+  padding: 20px 10px;
+  text-align: left;}
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .collection-menu .collection-tilte {
@@ -39,9 +40,14 @@
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s; }
 
-  .collection-menu .nav a:nth-child(3){
+  .collection-menu .nav a:nth-child(1),
+  .collection-menu .nav a:nth-child(2),
+  .collection-menu .nav a:nth-child(3),
+  .collection-menu .nav a:nth-child(4){
     line-height: 28px;
+    padding: 5px 5px 5px 15px;
   }
+
 
   .collection-menu .nav a.active {
     background-color: #fe7865;

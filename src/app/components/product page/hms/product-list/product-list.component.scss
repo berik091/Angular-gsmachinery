@@ -11,9 +11,12 @@ padding: 0 10px;
 
 .collection-menu .collection-tilte {
 background-color: #e5e5e5;
-font-size: 24px;
+font-size: 16px;
 font-weight: 600;
-padding: 20px 10px; }
+padding: 20px 10px;
+text-align: left;
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .collection-menu .collection-tilte {
@@ -39,13 +42,17 @@ color: #777;
 -o-transition: all 0.4s ease-out 0s;
 transition: all 0.4s ease-out 0s; }
 
-.collection-menu .nav a:nth-child(3){
+.collection-menu .nav a:nth-child(1),
+.collection-menu .nav a:nth-child(2),
+.collection-menu .nav a:nth-child(3),
+.collection-menu .nav a:nth-child(4){
   line-height: 28px;
+  padding: 5px 5px 5px 15px;
 }
 
 .collection-menu .nav a.active {
-  background-color: #fe7865;
-  border-color: #fe7865;
+  background-color: #ba1638;
+  border-color: #ba1638;
   color: #fff; }
 
 .single-product-items {
@@ -63,7 +70,7 @@ overflow: hidden; }
   display: block; }
 .single-product-items .product-item-image img {
   width: 100%;
-  height: 200px;
+  height: 170px;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -72,7 +79,7 @@ overflow: hidden; }
 .single-product-items .product-item-image .product-discount-tag {
   width: 70px;
   height: 70px;
-  background-color: #fe7865;
+  background-color: #ba1638;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -92,7 +99,7 @@ color: #0089d0;
 -o-transition: all 0.4s ease-out 0s;
 transition: all 0.4s ease-out 0s; }
 .single-product-items .product-item-content .product-title a:hover {
-  color: #fe7865; }
+  color: #ba1638; }
 .single-product-items .product-item-content .rating li {
 color: #fc924b;
 font-size: 12px;
@@ -165,7 +172,7 @@ transform: translateY(-50%); }
   width: 50px;
   line-height: 48px;
   border-radius: 50%;
-  border: 1px solid #fe7865;
+  border: 1px solid #ba1638;
   background-color: #fff;
   text-align: center;
   cursor: pointer;
@@ -185,8 +192,8 @@ transform: translateY(-50%); }
       line-height: 28px;
       font-size: 16px; } }
   .product-items-active .slick-arrow i:hover {
-    background-color: #fe7865;
-    border-color: #fe7865;
+    background-color: #ba1638;
+    border-color: #ba1638;
     color: #fff; }
 
 .tab-content .tab-pane {
