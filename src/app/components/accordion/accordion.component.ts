@@ -38,8 +38,6 @@ export class AccordionComponent implements OnInit {
       });
       $(".accordion-container .set a:eq(0)").trigger('click');
     });
-  
-    
   }
 
 }

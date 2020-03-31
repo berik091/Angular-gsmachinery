@@ -58,7 +58,7 @@
   padding-bottom: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: 0 0 5px rgba(0, 0,0, 0.3);
+  // box-shadow: 0 0 5px rgba(0, 0,0, 0.3);
 
 
 }
@@ -88,10 +88,14 @@
       color: #fff;
       font-weight: 600;
       font-size: 22px;
+
       line-height: 70px; }
+.single-product-items .product-item-content{
+  padding: 10px 0 15px 0;
+}
 .single-product-items .product-item-content .product-title a {
-  font-size: 13px;
-  color: #0089d0;
+  font-size: 12px;
+  color: #000000;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;

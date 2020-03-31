@@ -4,6 +4,10 @@
 .carousel-caption h3,p{
   color: #fff;
 }
+.picsum-img-wrapper img{
+  width: 1100px;
+  height: 500px
+}
 
 @media (max-width: 375px){
   .carousel-caption {
