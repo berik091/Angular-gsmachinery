@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-discount',
@@ -12,18 +13,26 @@ discounts: any[] = [
   {
     name: 'Tosun Tarim',
     text: 'Подробнее',
-    imageUrl: 'assets/images/discount-product/product-1.jpg'
+    imageUrl: 'assets/images/discount-product/product-1.jpg',
+    ahref: '/Product'
   },
   {
     name: 'HMS',
     text: 'Подробнее',
-    imageUrl: 'assets/images/discount-product/product-2.jpg'
+    imageUrl: 'assets/images/discount-product/product-2.jpg',
+    ahref: '/Hms'
   },
 ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+          return;
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
   }
 
 }

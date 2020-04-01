@@ -1,9 +1,9 @@
 .block{
     text-align: center;
-    display: flex;
     max-width: 1200px;
     flex-wrap: nowrap;
-    
+    margin: auto;
+
     h1{
         font-size: 18rem;
     }
@@ -14,15 +14,12 @@
         font-size: 20px;
         color: red;
     }
-    .mainmage{
-        width: 40%;
-    }
     .maintext{
-        width: 60%;
+        width: 100%;
     }
 }
 @media (max-width: 375px),
-       (max-width: 414px)    
+       (max-width: 414px)
 {
     .block{
         justify-content: center;
@@ -32,7 +29,7 @@
         h1{
             font-size: 50px;
             font-weight: 800;
-        }    
+        }
     }
   }
   @media (max-width: 768px),
@@ -45,6 +42,6 @@
         h1{
             font-size: 130px;
             font-weight: 800;
-        }    
+        }
     }
   }

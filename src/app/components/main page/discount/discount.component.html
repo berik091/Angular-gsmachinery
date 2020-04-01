@@ -1,23 +1,23 @@
-<div class="container" >
+<div class="container-discount" >
   <div class=" row">
     <div class="col-lg-6" *ngFor = "let discount of discounts">
-      <div class="single-discount-product mt-30">
+      <div class="single-discount-product">
           <div class="product-image" >
-              <img src="{{discount.imageUrl}}" appHover>
+              <img src="{{discount.imageUrl}}" appHover id="One">
           </div>
           <div class="product-content">
               <h4 class="content-title mb-15">{{discount.name}}</h4>
-              <a href="#">{{discount.text}}<i class="lni-chevron-right"></i></a>
+              <a routerLink='{{discount.ahref}}'>{{discount.text}}<i class="lni-chevron-right"></i></a>
           </div>
       </div>
   </div>
   </div>
 </div>
 
- 
 
- 
-  
+
+
+
 
 
 

@@ -7,20 +7,20 @@ services: {
       buttontext: 'Подробнее',
       buttonlink: '/product',
   leftblock: [{
-      title: 'Biko',
-      text: 'Hello!'
+      title: 'Преимущество №1',
+      text: 'Описание!'
     },
     {
-      title: 'Siko',
-      text: 'Hi!'
+      title: 'Преимущество №2',
+      text: 'Описание!'
     }],
   rightblock: [{
-      title: 'Biko',
-      text: 'Hello!'
+    title: 'Преимущество №3',
+    text: 'Описание!'
     },
     {
-      title: 'Siko',
-      text: 'Hi!'
+      title: 'Преимущество №4',
+      text: 'Описание!'
     }],
 }
 };

@@ -1,5 +1,6 @@
     <section id="product" class="product-area pt-100 pb-130">
         <div class="container">
+          <h5 style="padding: 20px 0;"> Сельскохозяйственная техника</h5>
             <div class="row">
                 <!-- Основные категории -->
                 <div class="col-lg-3 col-md-4">
@@ -10,7 +11,7 @@
 
                             <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Кормосмеситель вертикальный</a>
 
-                            <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Кормораздатчик</a>
+                            <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Кормораздатчик c одиночным шнеком</a>
 
                             <a class="silage" id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="false">Пресс-подборщик</a>
 
@@ -34,7 +35,7 @@
                                                   <a><img src="{{horizontal.imageUrl}}" alt="Product"></a>
                                               </div>
                                               <div class="product-item-content text-center mt-30">
-                                                  <h5 class="product-title"><a [routerLink]="[ '/Form']">{{horizontal.name | uppercase}} м<sup>3</sup></a></h5>
+                                                  <h5 class="product-title"><a [routerLink]="[ '/Product', horizontal.id]">{{horizontal.name | uppercase}} м<sup>3</sup></a></h5>
                                                   <span class="regular-price">{{horizontal.price}} &#8376;</span>
                                               </div>
                                           </div> <!-- single product items -->
@@ -42,7 +43,6 @@
                                     </div>
                                 </div> <!-- row -->
                             </div> <!-- product items -->
-                            <ngb-pagination class="d-flex justify-content-center" [collectionSize]="40" [(page)]="page" [boundaryLinks]="false"></ngb-pagination>
                         </div> <!-- tab pane -->
 
       <!-- Category 2     -->
@@ -78,8 +78,8 @@
                                             <a href="#"><img src="{{auger.imageUrl}}" alt="Product"></a>
                                         </div>
                                         <div class="product-item-content text-center mt-30">
-                                          <h5 class="product-title"><a href="#">{{auger.name}}</a></h5>
-                                            <span class="regular-price">{{auger.price}}</span>
+                                          <h5 class="product-title"><a href="#">{{auger.name}}  м<sup>3</sup></a></h5>
+                                            <span class="regular-price">{{auger.price}} &#8376;</span>
                                         </div>
                                     </div> <!-- single product items -->
                                     </a>
