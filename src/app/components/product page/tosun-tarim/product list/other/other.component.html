@@ -1,0 +1,45 @@
+<section id="product" class="product-area pt-100 pb-130">
+    <div class="container">
+      <h5 style="padding: 20px 0;"> Сельскохозяйственная техника</h5>
+        <div class="row">
+            <!-- Основные категории -->
+            <div class="col-lg-3 col-md-4">
+                <div class="collection-menu text-center mt-30">
+                    <h4 class="collection-tilte"> <img src="assets/images/product/logo.svg" style="width: 80px;"><strong style ='padding-left: 10px;'>продукции</strong></h4>
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a routerLink="/Tosuntarim/Horizontal-feed-mixer">Кормосмеситель горизонтальный</a>
+
+                        <a routerLink="/Tosuntarim/Vertical-feed-mixer">Кормосмеситель вертикальный</a>
+
+                        <a routerLink="/Tosuntarim/Auger">Кормораздатчик c одиночным шнеком</a>
+
+                        <a routerLink="/Tosuntarim/Silage">Пресс-подборщик</a>
+
+                        <a class="active" routerLink="/Tosuntarim/Other">Другие продукции</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-lg-9 col-md-8">
+              <div class="tab-content">     
+                    <div class="product-items">
+                        <div class="row product-items-active">
+                                <div class="col-md-4" *ngFor="let other of others">
+                                <a [routerLink]="[ '/Tosuntarim/Other', other.id ]">
+                                <div class="single-product-items">
+                                    <div class="product-item-image">
+                                        <a href="#"><img src="{{other.imageUrl}}" alt="Product"></a>
+                                    </div>
+                                    <div class="product-item-content text-center mt-30">
+                                        <h5 class="product-title"><a href="#">{{other.name}}</a></h5>
+                                        <span class="regular-price">{{other.price}}</span>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div> <!-- tab content -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+  </section>
