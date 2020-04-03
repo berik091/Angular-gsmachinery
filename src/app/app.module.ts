@@ -22,7 +22,7 @@ import { HoverDirective } from './hover.directive';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ProductListComponent } from './components/product page/hms/product-list/product-list.component';
-import { ProductItemComponent } from './components/product page/hms/product-item/product-item.component';
+import { ProductItemComponent } from './components/product page/hms/product-item/hms-horizontal/product-item.component';
 import { HorizontalListComponent } from './components/product page/tosun-tarim/product list/horizontal-list/horizontal-list.component';
 import { VerticalListComponent } from './components/product page/tosun-tarim/product list/vertical-list/vertical-list.component';
 import { AugerComponent } from './components/product page/tosun-tarim/product list/auger/auger.component';
@@ -33,6 +33,10 @@ import { HmsVerticalListComponent } from './components/product page/hms/product-
 import { SowingMachinesListComponent } from './components/product page/hms/product-list/sowing-machines-list/sowing-machines-list.component';
 import { PneumaticSowingListComponent } from './components/product page/hms/product-list/pneumatic-sowing-list/pneumatic-sowing-list.component';
 import { GunnyLiftListComponent } from './components/product page/hms/product-list/gunny-lift-list/gunny-lift-list.component';
+import { HmsVerticalDetailComponent } from './components/product page/hms/product-item/hms-vertical-detail/hms-vertical-detail.component';
+import { HmsAugerDetailComponent } from './components/product page/hms/product-item/hms-auger-detail/hms-auger-detail.component';
+import { HmsSilageDetailComponent } from './components/product page/hms/product-item/hms-silage-detail/hms-silage-detail.component';
+import { HmsOtherDetailComponent } from './components/product page/hms/product-item/hms-other-detail/hms-other-detail.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +67,10 @@ import { GunnyLiftListComponent } from './components/product page/hms/product-li
     SowingMachinesListComponent,
     PneumaticSowingListComponent,
     GunnyLiftListComponent,
+    HmsVerticalDetailComponent,
+    HmsAugerDetailComponent,
+    HmsSilageDetailComponent,
+    HmsOtherDetailComponent,
   ],
   imports: [
     BrowserModule,

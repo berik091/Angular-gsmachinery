@@ -11,7 +11,7 @@ import { DiscountComponent } from 'src/app/components/main page/discount/discoun
 import { ProductComponent } from './components/product page/tosun-tarim/product item/product.component';
 import { ServiceExtraComponent } from 'src/app/components/service page/service-extra/service-extra.component';
 import { ProductListComponent } from './components/product page/hms/product-list/product-list.component';
-import { ProductItemComponent } from './components/product page/hms/product-item/product-item.component';
+import { ProductItemComponent } from './components/product page/hms/product-item/hms-horizontal/product-item.component';
 import { HorizontalListComponent } from './components/product page/tosun-tarim/product list/horizontal-list/horizontal-list.component';
 import { VerticalListComponent } from './components/product page/tosun-tarim/product list/vertical-list/vertical-list.component';
 import { AugerComponent } from './components/product page/tosun-tarim/product list/auger/auger.component';

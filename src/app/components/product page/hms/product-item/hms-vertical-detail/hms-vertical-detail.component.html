@@ -6,9 +6,9 @@
   <div class="product-container">
 <!-- left container -->
       <div class="left-container">
-          <div class="imgBox" ><img src="{{item.imageUrl}}" alt=""></div>
+          <div class="imgBox" ><img src="{{item2.imageUrl}}" alt=""></div>
           <ul class="thumb">
-              <li *ngFor="let productSlide of item.extraImages">
+              <li *ngFor="let productSlide of item2.extraImages">
                   <a href="{{productSlide}}" target="imgBox">
                        <img src="{{productSlide}}" alt=""width="112px">
                   </a>
@@ -18,10 +18,10 @@
 
 <!-- right container -->
 <div class="right-container">
-  <h1 class="product-name">{{item.name | titlecase}} м<sup>3</sup></h1>
+  <h1 class="product-name">{{item2.name | titlecase}} м<sup>3</sup></h1>
     <div class="product-id">
-      <small style="float: right;">Артикул: {{item.id}}</small>
-      <p>{{item.price}} &#8376;</p>
+      <small style="float: right;">Артикул: {{item2.id}}</small>
+      <p>{{item2.price}} &#8376;</p>
     </div>
   <div class="accordion-container">
     <div class="set">
@@ -30,7 +30,7 @@
         <i class="fa fa-plus" style="font-size: 8px;"></i>
       </a>
       <div class="content">
-        <p>{{item.description}}</p>
+        <p>{{item2.description}}</p>
       </div>
     </div>
     <div class="set">
@@ -40,9 +40,9 @@
       </a>
       <div class="content">
         <ul>
-          <li>Вместимость:  {{item.capacity}} кг</li>
-          <li>Габариты (ш.в.д): {{item.size}} </li>
-          <li>Количество скоростей дискретного диска : {{item.discCount}} л.с.</li>
+          <li>Вместимость:  {{item2.capacity}} кг</li>
+          <li>Габариты (ш.в.д): {{item2.size}} </li>
+          <li>Количество скоростей дискретного диска : {{item2.discCount}} л.с.</li>
           <li>Производитель: Турция</li>
         </ul>
       </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsHmsService } from 'src/app/services/products-hms.service';
+import { HmsHorizontalService } from 'src/app/services/Hms/hms-horizontal.service';
 
 @Component({
   selector: 'app-hms-vertical-list',
@@ -10,14 +10,14 @@ export class HmsVerticalListComponent implements OnInit {
 
   verticals = {};
 
-  constructor(private productsHmsService: ProductsHmsService) {
+  constructor(private hmsVerticalService: HmsHorizontalService) {
   }
 
   ngOnInit(): void {
     this.verticals = this.getVerticals();
     }
   getVerticals() {
-    return this.productsHmsService.verticals;
+    return this.hmsVerticalService.verticals;
   }
   }
 

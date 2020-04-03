@@ -1,30 +1,32 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params, NavigationEnd, Router } from '@angular/router';
-import { ProductsHmsService, Item } from 'src/app/services/products-hms.service';
+import { Item4, HmsHorizontalService } from 'src/app/services/Hms/hms-horizontal.service';
+
 declare var $: any;
 @Component({
-  selector: 'app-product-item',
-  templateUrl: './product-item.component.html',
-  styleUrls: ['./product-item.component.scss']
+  selector: 'app-hms-silage-detail',
+  templateUrl: './hms-silage-detail.component.html',
+  styleUrls: ['./hms-silage-detail.component.scss']
 })
-export class ProductItemComponent implements OnInit {
-  @Input() item: Item;
+export class HmsSilageDetailComponent implements OnInit {
+
+  @Input() item4: Item4;
 
   constructor(
     private route: ActivatedRoute,
-    private productsHmsService: ProductsHmsService,
+    private hmsSilageService: HmsHorizontalService,
     private router: Router ) {
     this.route.params.subscribe((params: Params) => {
       console.log('Params', params);
-      this.item = this.productsHmsService.getById(+params.id);
+      this.item4 = this.hmsSilageService.getById(+params.id);
   });
    }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
 
-    // this.extraImages = this.getProduct.extraImages();
-    $(document).ready(function () {
+    // tslint:disable-next-line: only-arrow-functions
+    $(document).ready(function() {
       $('.thumb a').click(function(e) {
           e.preventDefault();
           $('.imgBox img').attr('src', $(this).attr( 'href'));
@@ -67,5 +69,6 @@ export class ProductItemComponent implements OnInit {
     });
     $('.accordion-container .set a:eq(0)').trigger('click');
   });
+  // Аккордион//
   }
 }

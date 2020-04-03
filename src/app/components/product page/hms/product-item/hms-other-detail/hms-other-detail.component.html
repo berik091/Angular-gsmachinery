@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="btn-back">
+    <button class="btn" [routerLink]="[ '../']"><img src="assets/icons/chevron-left-solid.svg" width="10px" class="mr-2"><small><b>Back</b></small></button>
+  </div>
+
+  <div class="product-container">
+<!-- left container -->
+      <div class="left-container">
+          <div class="imgBox" ><img src="{{item5.imageUrl}}" alt=""></div>
+          <ul class="thumb">
+              <li *ngFor="let productSlide of item5.extraImages">
+                  <a href="{{productSlide}}" target="imgBox">
+                       <img src="{{productSlide}}" alt=""width="112px">
+                  </a>
+              </li>
+          </ul>
+        </div>
+
+<!-- right container -->
+<div class="right-container">
+  <h1 class="product-name">{{item5.name | titlecase}} м<sup>3</sup></h1>
+    <div class="product-id">
+      <small style="float: right;">Артикул: {{item5.id}}</small>
+      <p>{{item5.price}} &#8376;</p>
+    </div>
+  <div class="accordion-container">
+    <div class="set">
+      <a>
+        Описание
+        <i class="fa fa-plus" style="font-size: 8px;"></i>
+      </a>
+      <div class="content">
+        <p>{{item5.description}}</p>
+      </div>
+    </div>
+    <div class="set">
+      <a>
+        Характеристики
+        <i class="fa fa-plus" style="font-size: 8px;"></i>
+      </a>
+      <div class="content">
+        <ul>
+          <li>Вместимость:  {{item5.capacity}} кг</li>
+          <li>Габариты (ш.в.д): {{item5.size}} </li>
+          <li>Количество скоростей дискретного диска : {{item5.discCount}} л.с.</li>
+          <li>Производитель: Турция</li>
+        </ul>
+      </div>
+    </div>
+    <div class="set">
+      <a>
+        Доставка
+        <i class="fa fa-plus" style="font-size: 8px;"></i>
+      </a>
+      <div class="content">
+        <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      </div>
+    </div>
+    <div class="set">
+      <a>
+        Гарантия
+        <i class="fa fa-plus" style="font-size: 8px;"></i>
+      </a>
+      <div class="content">
+        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsHmsService } from 'src/app/services/products-hms.service';
+import { HmsHorizontalService } from 'src/app/services/Hms/hms-horizontal.service';
 
 @Component({
   selector: 'app-sowing-machines-list',
@@ -10,7 +10,7 @@ export class SowingMachinesListComponent implements OnInit {
 
   augers = {};
 
-  constructor(private productsHmsService: ProductsHmsService) {
+  constructor(private hmsAugerService: HmsHorizontalService) {
   }
 
   ngOnInit(): void {
@@ -18,7 +18,7 @@ export class SowingMachinesListComponent implements OnInit {
     }
 
   getAugers() {
-    return this.productsHmsService.augers;
+    return this.hmsAugerService.augers;
   }
   }
 
