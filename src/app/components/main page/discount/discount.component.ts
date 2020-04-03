@@ -14,13 +14,13 @@ discounts: any[] = [
     name: 'Tosun Tarim',
     text: 'Подробнее',
     imageUrl: 'assets/images/discount-product/product-1.jpg',
-    ahref: '/Product'
+    ahref: '/Tosuntarim/Horizontal-feed-mixer'
   },
   {
     name: 'HMS',
     text: 'Подробнее',
     imageUrl: 'assets/images/discount-product/product-2.jpg',
-    ahref: '/Hms'
+    ahref: '/HMS/Horizontal-feed-mixer'
   },
 ];
 
@@ -31,7 +31,7 @@ discounts: any[] = [
       if (!(evt instanceof NavigationEnd)) {
           return;
       }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo(0, 0);
   });
   }
 

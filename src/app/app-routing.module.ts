@@ -17,13 +17,18 @@ import { VerticalListComponent } from './components/product page/tosun-tarim/pro
 import { AugerComponent } from './components/product page/tosun-tarim/product list/auger/auger.component';
 import { SilageComponent } from './components/product page/tosun-tarim/product list/silage/silage.component';
 import { OtherComponent } from './components/product page/tosun-tarim/product list/other/other.component';
+import { HmsHorizontalListComponent } from './components/product page/hms/product-list/hms-horizontal-list/hms-horizontal-list.component';
+import { HmsVerticalListComponent } from './components/product page/hms/product-list/hms-vertical-list/hms-vertical-list.component';
+import { SowingMachinesListComponent } from './components/product page/hms/product-list/sowing-machines-list/sowing-machines-list.component';
+import { PneumaticSowingListComponent } from './components/product page/hms/product-list/pneumatic-sowing-list/pneumatic-sowing-list.component';
+import { GunnyLiftListComponent } from './components/product page/hms/product-list/gunny-lift-list/gunny-lift-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: 'Home', component: BssliderComponent},
   { path: 'Home', component: DiscountComponent},
   // Product detail
-  { path: 'Product', component: ProductsComponent },  
+  { path: 'Product', component: ProductsComponent },
   { path: 'Tosuntarim/Horizontal-feed-mixer', component: HorizontalListComponent },
   { path: 'Tosuntarim/Horizontal-feed-mixer/:id', component: ProductComponent},
   { path: 'Tosuntarim/Vertical-feed-mixer', component: VerticalListComponent },
@@ -34,6 +39,17 @@ const routes: Routes = [
   { path: 'Tosuntarim/Silage/:id', component: ProductComponent },
   { path: 'Tosuntarim/Other', component: OtherComponent },
   { path: 'Tosuntarim/Other/:id', component: ProductComponent },
+
+  { path: 'HMS/Horizontal-feed-mixer', component: HmsHorizontalListComponent},
+  { path: 'HMS/Horizontal-feed-mixer/:id', component: ProductItemComponent },
+  { path: 'HMS/Vertical-feed-mixer', component: HmsVerticalListComponent },
+  { path: 'HMS/Vertical-feed-mixer/:id', component: ProductItemComponent },
+  { path: 'HMS/Sowing-macines', component: SowingMachinesListComponent},
+  { path: 'HMS/Sowing-macines/:id', component: ProductItemComponent },
+  { path: 'HMS/Pneumatic-sowing-macines', component: PneumaticSowingListComponent },
+  { path: 'HMS/Pneumatic-sowing-macines/:id', component: ProductItemComponent },
+  { path: 'HMS/Gunny-lift', component: GunnyLiftListComponent },
+  { path: 'HMS/Gunny-lift/:id', component: ProductItemComponent },
 
   { path: 'Hms', component: ProductListComponent},
   { path: 'Hms/:id', component: ProductItemComponent},

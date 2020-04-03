@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, NavigationEnd, Router } from '@angular/router';
 import { ProductsHmsService, Item } from 'src/app/services/products-hms.service';
 declare var $: any;
 @Component({
@@ -12,7 +12,8 @@ export class ProductItemComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private productsHmsService: ProductsHmsService ) {
+    private productsHmsService: ProductsHmsService,
+    private router: Router ) {
     this.route.params.subscribe((params: Params) => {
       console.log('Params', params);
       this.item = this.productsHmsService.getById(+params.id);
@@ -29,5 +30,12 @@ export class ProductItemComponent implements OnInit {
           $('.imgBox img').attr('src', $(this).attr( 'href'));
       });
   });
+
+    this.router.events.subscribe((evt) => {
+    if (!(evt instanceof NavigationEnd)) {
+        return;
+    }
+    window.scrollTo(0, 0);
+});
   }
 }

@@ -29,6 +29,11 @@ import { VerticalListComponent } from './components/product page/tosun-tarim/pro
 import { AugerComponent } from './components/product page/tosun-tarim/product list/auger/auger.component';
 import { SilageComponent } from './components/product page/tosun-tarim/product list/silage/silage.component';
 import { OtherComponent } from './components/product page/tosun-tarim/product list/other/other.component';
+import { HmsHorizontalListComponent } from './components/product page/hms/product-list/hms-horizontal-list/hms-horizontal-list.component';
+import { HmsVerticalListComponent } from './components/product page/hms/product-list/hms-vertical-list/hms-vertical-list.component';
+import { SowingMachinesListComponent } from './components/product page/hms/product-list/sowing-machines-list/sowing-machines-list.component';
+import { PneumaticSowingListComponent } from './components/product page/hms/product-list/pneumatic-sowing-list/pneumatic-sowing-list.component';
+import { GunnyLiftListComponent } from './components/product page/hms/product-list/gunny-lift-list/gunny-lift-list.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +59,12 @@ import { OtherComponent } from './components/product page/tosun-tarim/product li
     VerticalListComponent,
     AugerComponent,
     SilageComponent,
-    OtherComponent
+    OtherComponent,
+    HmsHorizontalListComponent,
+    HmsVerticalListComponent,
+    SowingMachinesListComponent,
+    PneumaticSowingListComponent,
+    GunnyLiftListComponent,
   ],
   imports: [
     BrowserModule,

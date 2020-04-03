@@ -1,0 +1,49 @@
+<section id="hms" class="product-area">
+  <div class="container">
+    <h4 style="padding: 20px 0;"> Сельскохозяйственная техника</h4>
+      <div class="row">
+          <!-- Основные категории -->
+          <div class="col-lg-3 col-md-4">
+              <div class="collection-menu text-center mt-30">
+                  <h5 class="collection-tilte"><img src="assets/images/product/Product HMS/logo-hms.png" style="width:80px"><strong>продукции</strong></h5>
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <a routerLink = "/HMS/Horizontal-feed-mixer">Горизонтальный разбрасыватель удобрений</a>
+
+                      <a routerLink = "/HMS/Vertical-feed-mixer">Вертикальный разбрасыватель удобрений</a>
+
+                      <a routerLink = "/HMS/Sowing-macines">Универсальный тип сеялки передач зерна машины</a>
+
+                      <a routerLink = "/HMS/Pneumatic-sowing-macines">Пневматический тип сеялки передач зерна машины</a>
+
+                      <a class="active" routerLink = "/HMS/Gunny-lift">Кран Gunny lift</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-9 col-md-8">
+            <div class="tab-content">
+              <div class="tab-pane fade show active">
+                <div class="product-items">
+                    <div class="row product-items-active">
+                            <div class="col-md-4" *ngFor="let other of others">
+                              <a [routerLink]="['/HMS/Gunny-lift', other.id ]">
+                                <div class="single-product-items">
+                                    <div class="product-item-image">
+                                        <a href="#"><img src="{{other.imageUrl}}" alt="Product"></a>
+                                    </div>
+                                    <div class="product-item-content text-center mt-30">
+                                      <h5 class="product-title"><a [routerLink]="['/HMS/Gunny-lift', other.id ]">{{other.name}}</a></h5>
+                                        <span class="regular-price">{{other.price}} &#8376;</span>
+                                    </div>
+                                </div>
+                              </a>
+                          </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
