@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HmsHorizontalService } from 'src/app/services/Hms/hms-horizontal.service';
+import { HmsProductsService } from 'src/app/services/Hms/hms-products.service';
 
 @Component({
   selector: 'app-gunny-lift-list',
@@ -10,7 +10,7 @@ export class GunnyLiftListComponent implements OnInit {
 
   others = {};
 
-  constructor(private hmsOtherService: HmsHorizontalService) {
+  constructor(private hmsOtherService: HmsProductsService) {
   }
 
   ngOnInit(): void {

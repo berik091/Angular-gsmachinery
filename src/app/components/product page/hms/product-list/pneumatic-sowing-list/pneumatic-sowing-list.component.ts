@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HmsHorizontalService } from 'src/app/services/Hms/hms-horizontal.service';
+import { HmsProductsService } from 'src/app/services/Hms/hms-products.service';
 
 @Component({
   selector: 'app-pneumatic-sowing-list',
@@ -10,7 +10,7 @@ export class PneumaticSowingListComponent implements OnInit {
 
   silages = {};
 
-  constructor(private hmsSilageService: HmsHorizontalService) {
+  constructor(private hmsSilageService: HmsProductsService) {
   }
 
   ngOnInit(): void {

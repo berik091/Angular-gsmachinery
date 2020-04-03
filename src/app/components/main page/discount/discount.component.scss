@@ -12,7 +12,7 @@
     .product-image {
         overflow: hidden;
         img{
-            width: 100%;
+            max-width: 100%;
             transition: all 0.4s ease-out 0s;
             &:hover{
               transform: scale(1.1);
@@ -24,14 +24,18 @@
     top:0;
     left:0;
     padding: 80px 30px;
+        h4{
+          padding-bottom: 30px;
+        }
 
         a {
-            color: #777;
+            color: #000000;
             font-size: 16px;
             font-weight: 500;
             transition: all 0.2s ease-out 0s;
             text-decoration: none;
             list-style: none;
+            border-bottom: 1px solid #000000;
 
             &:hover{
               color: #fe7865;
@@ -43,3 +47,29 @@
               margin-left: 5px; }
           }
 }
+@media (max-width: 375px){
+  .container-discount{
+    padding: 30px 0 0 0;
+  
+  .single-discount-product{
+    .product-image {
+      width: 375px;
+      text-align: center;
+          img{
+              width: 98%;
+              height: auto;}
+   }
+   .product-content{
+      color:#000000;
+      align-items: center;
+    h4{
+      font-size: 1.2rem;
+      padding-bottom: 10px;
+    }
+    a {
+      font-weight: 700;
+      border-bottom: 1px solid #000000;
+    }
+   }
+  }
+}}

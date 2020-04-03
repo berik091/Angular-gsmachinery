@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params, NavigationEnd, Router } from '@angular/router';
-import { Item4, HmsHorizontalService } from 'src/app/services/Hms/hms-horizontal.service';
+import { HmsProductsService, Item4 } from 'src/app/services/Hms/hms-products.service';
 
 declare var $: any;
 @Component({
@@ -14,7 +14,7 @@ export class HmsSilageDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private hmsSilageService: HmsHorizontalService,
+    private hmsSilageService: HmsProductsService,
     private router: Router ) {
     this.route.params.subscribe((params: Params) => {
       console.log('Params', params);
