@@ -1,27 +1,27 @@
-<section id="product" class="product-area pt-100 pb-130">
+<section id="product" class="product-area">
     <div class="container">
       <h5 style="padding: 20px 0;"> Сельскохозяйственная техника</h5>
         <div class="row">
             <!-- Основные категории -->
             <div class="col-lg-3 col-md-4">
-                <div class="collection-menu text-center mt-30">
+                <div class="collection-menu text-center">
                     <h4 class="collection-tilte"> <img src="assets/images/product/logo.svg" style="width: 80px;"><strong style ='padding-left: 10px;'>продукции</strong></h4>
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav flex-column nav-pills">
                         <a routerLink="/Tosuntarim/Horizontal-feed-mixer">Кормосмеситель горизонтальный</a>
 
                         <a routerLink="/Tosuntarim/Vertical-feed-mixer">Кормосмеситель вертикальный</a>
 
                         <a routerLink="/Tosuntarim/Auger">Кормораздатчик c одиночным шнеком</a>
 
-                        <a  class="active" routerLink="Tosuntarim/Silage">Пресс-подборщик</a>
+                        <a class="active" routerLink="/Tosuntarim/Silage">Пресс-подборщик</a>
 
                         <a routerLink="/Tosuntarim/Other">Другие продукции</a>
                     </div>
-                </div> 
+                </div>
             </div>
                 <div class="col-lg-9 col-md-8">
                 <div class="tab-content">
-                    <div class="product-items mt-30">
+                    <div class="product-items">
                         <div class="row product-items-active">
                                 <div class="col-md-4" *ngFor="let silage of silages">
                                 <a [routerLink]="['/Tosuntarim/Silage', silage.id ]">

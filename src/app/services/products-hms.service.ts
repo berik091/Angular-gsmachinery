@@ -10,6 +10,7 @@ export interface Item {
   size?: any;
   power?: number;
   description?: string;
+  discCount?: number;
 }
 @Injectable({
   providedIn: 'root'
@@ -19,8 +20,8 @@ export class ProductsHmsService {
   horizontals: Item[] = [
   { name: 'Разбрасыватель удобрений S 900',
     imageUrl: 'assets/images/product/Product HMS/HORIZONTAL MIXER/s900/1.png', price: '990,000.00', id: 300,
-    capacity: 2.5, size: '2.0м х 1.0м х 1.32м', power: 40,
-    description: 'Кормосмесители являются очень важной частью животноводческих ферм, производя однородные корма для животных. Миксер для кормораздатчика позволяет быстро разрезать тюки с помощью специально легированных ножей, однородно смешивая грубые корма и концентрированные корма благодаря своей конструкции корпуса. Корпус питателя-смесителя также разработан для уменьшения количества пищи, оставшейся после доставки.',
+    capacity: 900, size: '2.05м х 1.1м х 1.32м', discCount: 2,
+    description: 'Разбрасыватели удобрений могут управляться гидравлически, и вы можете утилизировать удобрения отдельно с правой и левой стороны благодаря гидравлическому клапану. Благодаря рабочей ширине до 36 метров и легко регулируемым крыльям он обеспечивает непревзойденный совершенный процесс расширения в своем классе',
     extraImages: ['assets/images/product/Product HMS/HORIZONTAL MIXER/s900/2.png',
               'assets/images/product/Product HMS/HORIZONTAL MIXER/s900/3.png',
               'assets/images/product/Product HMS/HORIZONTAL MIXER/s900/4.png'],

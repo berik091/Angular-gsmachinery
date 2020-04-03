@@ -23,7 +23,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ProductListComponent } from './components/product page/hms/product-list/product-list.component';
 import { ProductItemComponent } from './components/product page/hms/product-item/product-item.component';
-import { AccordionComponent } from './components/accordion/accordion.component';
 import { HorizontalListComponent } from './components/product page/tosun-tarim/product list/horizontal-list/horizontal-list.component';
 import { VerticalListComponent } from './components/product page/tosun-tarim/product list/vertical-list/vertical-list.component';
 import { AugerComponent } from './components/product page/tosun-tarim/product list/auger/auger.component';
@@ -54,7 +53,6 @@ import { GunnyLiftListComponent } from './components/product page/hms/product-li
     ProductSliderComponent,
     ProductListComponent,
     ProductItemComponent,
-    AccordionComponent,
     HorizontalListComponent,
     VerticalListComponent,
     AugerComponent,

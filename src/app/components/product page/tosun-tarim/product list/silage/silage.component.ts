@@ -8,11 +8,7 @@ import { ProductsService } from 'src/app/services/products.service';
 })
 export class SilageComponent implements OnInit {
 
-  horizontals = {};
-  verticals = {};
-  augers = {};
   silages = {};
-  others = {};
 
   constructor(private productsService: ProductsService) {
    }

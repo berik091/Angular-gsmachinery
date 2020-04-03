@@ -30,7 +30,8 @@ export class ProductComponent implements OnInit {
           $('.imgBox img').attr('src', $(this).attr( 'href'));
       });
   });
-    $(document).ready(function() {
+  // Аккордион
+    $(document).ready( function() {
     $('.set > a').on('click', function() {
       if ($(this).hasClass('active')) {
         $(this).removeClass('active');
