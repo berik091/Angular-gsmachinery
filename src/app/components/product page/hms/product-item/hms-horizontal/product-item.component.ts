@@ -31,14 +31,6 @@ export class ProductItemComponent implements OnInit {
           $('.imgBox img').attr('src', $(this).attr( 'href'));
       });
   });
-
-    this.router.events.subscribe((evt) => {
-    if (!(evt instanceof NavigationEnd)) {
-        return;
-    }
-    window.scrollTo(0, 0);
-
-});
   // Аккордион
     $(document).ready( function() {
     $('.set > a').on('click', function() {
